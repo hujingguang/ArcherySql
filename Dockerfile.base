@@ -1,0 +1,26 @@
+FROM centos:latest
+MAINTAINER "hujingguangsa@gmail.com" 
+WORKDIR /opt
+ADD ./Python-3.6.5.tar.xz /opt/Python-3.6.5.tar.xz
+ADD ./requirements.txt /opt/requirements.txt 
+RUN  yum install wget gcc make zlib-devel openssl openssl-devel -y 
+RUN  cd Python-3.6.5.tar.xz/Python-3.6.5 && ./configure prefix=/usr/local/python3 && \
+    make && make install && cd ../.. && rm -rf Python-3.6.5.tar.xz 
+RUN /usr/local/python3/bin/pip3 install virtualenv -i https://mirrors.ustc.edu.cn/pypi/web/simple/ 
+RUN /usr/local/python3/bin/virtualenv venv4archery --python=/usr/local/python3/bin/python3
+RUN yum remove unixODBC-utf16 unixODBC-utf16-devel -y && \
+    curl https://packages.microsoft.com/config/rhel/7/prod.repo > /etc/yum.repos.d/mssql-release.repo && \
+    ACCEPT_EULA=Y yum install msodbcsql17 -y &&  ACCEPT_EULA=Y yum install mssql-tools -y
+ENV PATH "$PATH:/opt/mssql-tools/bin"
+RUN yum install unixODBC-devel -y && \
+    yum -y install gcc gcc-c++ python-devel mysql-devel openldap-devel unixODBC-devel gettext python36-devel -y && \
+    source ./venv4archery/bin/activate && \
+    pip install -r /opt/requirements.txt -i https://mirrors.ustc.edu.cn/pypi/web/simple/
+ADD ./start.sh /opt/start.sh 
+RUN chmod 775 /opt/start.sh
+
+   
+
+
+
+

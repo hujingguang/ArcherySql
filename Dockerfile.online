@@ -1,0 +1,30 @@
+FROM centos:latest
+MAINTAINER "hujingguangsa@gmail.com" 
+WORKDIR /opt
+RUN yum clean all && yum makecache &&  yum install wget gcc make zlib-devel openssl openssl-devel -y && \
+    wget "https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tar.xz" && \
+    tar -xvJf Python-3.6.5.tar.xz && cd Python-3.6.5 && ./configure prefix=/usr/local/python3 && \
+    make && make install && cd .. && rm -rf Python-3.6.5 Python-3.6.5.tar.xz 
+RUN /usr/local/python3/bin/pip3 install virtualenv -i https://mirrors.ustc.edu.cn/pypi/web/simple/ 
+RUN /usr/local/python3/bin/virtualenv venv4archery --python=/usr/local/python3/bin/python3
+RUN yum remove unixODBC-utf16 unixODBC-utf16-devel -y && \
+    curl https://packages.microsoft.com/config/rhel/7/prod.repo > /etc/yum.repos.d/mssql-release.repo && \
+    ACCEPT_EULA=Y yum install msodbcsql17 -y &&  ACCEPT_EULA=Y yum install mssql-tools -y
+ENV PATH "$PATH:/opt/mssql-tools/bin"
+ADD ./requirements.txt /opt/requirements.txt 
+RUN yum install unixODBC-devel -y  && \
+    yum -y install gcc gcc-c++ python-devel mysql-devel openldap-devel unixODBC-devel gettext python36-devel -y && \
+    source ./venv4archery/bin/activate && \
+    pip install -r /opt/requirements.txt -i https://mirrors.ustc.edu.cn/pypi/web/simple/ 
+ADD ./sql_archery /opt/sql_archery
+RUN source /opt/venv4archery/bin/activate && pip install -r /opt/sql_archery/requirements.txt 
+ADD ./start.sh /opt/sql_archery/start.sh    
+RUN chmod 755 /opt/sql_archery/start.sh
+CMD /opt/sql_archery/start.sh
+
+
+   
+
+
+
+

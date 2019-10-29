@@ -1,0 +1,37 @@
+2019-08-06 14:09:26,674 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2019-08-06 14:09:26,680 INFO daemonizing the supervisord process
+2019-08-06 14:09:26,681 INFO supervisord started with pid 12346
+2019-08-06 14:09:27,684 INFO spawned: 'qcluster' with pid 12352
+2019-08-06 14:09:28,686 INFO success: qcluster entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+<<<<<<< HEAD
+2019-10-17 14:53:24,342 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2019-10-17 14:53:24,455 INFO daemonizing the supervisord process
+2019-10-17 14:53:24,459 INFO supervisord started with pid 12035
+2019-10-17 14:53:25,465 INFO spawned: 'qcluster' with pid 12036
+2019-10-17 14:53:26,469 INFO success: qcluster entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+=======
+2019-10-17 16:34:48,644 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2019-10-17 16:34:48,647 INFO daemonizing the supervisord process
+2019-10-17 16:34:48,648 INFO supervisord started with pid 16505
+2019-10-17 16:34:49,652 INFO spawned: 'qcluster' with pid 16506
+2019-10-17 16:34:49,797 INFO exited: qcluster (exit status 1; not expected)
+2019-10-17 16:34:50,801 INFO spawned: 'qcluster' with pid 16516
+2019-10-17 16:34:50,888 INFO exited: qcluster (exit status 1; not expected)
+2019-10-17 16:34:52,893 INFO spawned: 'qcluster' with pid 16521
+2019-10-17 16:34:52,975 INFO exited: qcluster (exit status 1; not expected)
+2019-10-17 16:34:55,981 INFO spawned: 'qcluster' with pid 16531
+2019-10-17 16:34:56,062 INFO exited: qcluster (exit status 1; not expected)
+2019-10-17 16:34:57,065 INFO gave up: qcluster entered FATAL state, too many start retries too quickly
+2019-10-25 10:08:52,470 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2019-10-25 10:08:52,476 INFO daemonizing the supervisord process
+2019-10-25 10:08:52,477 INFO supervisord started with pid 9749
+2019-10-25 10:08:53,484 INFO spawned: 'qcluster' with pid 9750
+2019-10-25 10:08:53,619 INFO exited: qcluster (exit status 1; not expected)
+2019-10-25 10:08:54,627 INFO spawned: 'qcluster' with pid 9755
+2019-10-25 10:08:54,725 INFO exited: qcluster (exit status 1; not expected)
+2019-10-25 10:08:56,734 INFO spawned: 'qcluster' with pid 9760
+2019-10-25 10:08:56,843 INFO exited: qcluster (exit status 1; not expected)
+2019-10-25 10:08:59,857 INFO spawned: 'qcluster' with pid 9765
+2019-10-25 10:08:59,961 INFO exited: qcluster (exit status 1; not expected)
+2019-10-25 10:09:00,963 INFO gave up: qcluster entered FATAL state, too many start retries too quickly
+>>>>>>> hujingguang

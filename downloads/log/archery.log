@@ -1,0 +1,1188 @@
+[2019-08-05 21:53:02,436][MainThread:139956745475904][task_id:django-q][cluster.py:53][INFO]- Q Cluster-10488 starting.
+[2019-08-05 21:53:02,447][MainThread:139956745475904][task_id:django-q][cluster.py:348][INFO]- Process-1:1 ready for work at 10494
+[2019-08-05 21:53:02,449][MainThread:139956745475904][task_id:django-q][cluster.py:348][INFO]- Process-1:2 ready for work at 10495
+[2019-08-05 21:53:02,452][MainThread:139956745475904][task_id:django-q][cluster.py:348][INFO]- Process-1:3 ready for work at 10496
+[2019-08-05 21:53:02,455][MainThread:139956745475904][task_id:django-q][cluster.py:348][INFO]- Process-1:4 ready for work at 10497
+[2019-08-05 21:53:02,458][MainThread:139956745475904][task_id:django-q][cluster.py:319][INFO]- Process-1:5 monitoring at 10498
+[2019-08-05 21:53:02,460][MainThread:139956745475904][task_id:django-q][cluster.py:201][INFO]- Process-1 guarding cluster at 10493
+[2019-08-05 21:53:02,462][MainThread:139956745475904][task_id:django-q][cluster.py:284][INFO]- Process-1:6 pushing tasks at 10499
+[2019-08-05 21:53:02,464][MainThread:139956745475904][task_id:django-q][cluster.py:204][INFO]- Q Cluster-10488 running.
+[2019-08-05 21:53:34,404][MainThread:139956745475904][task_id:django-q][cluster.py:71][DEBUG]- MainProcess got signal UNKNOWN
+[2019-08-05 21:53:34,406][MainThread:139956745475904][task_id:django-q][cluster.py:61][INFO]- Q Cluster-10488 stopping.
+[2019-08-05 21:53:34,713][MainThread:139956745475904][task_id:django-q][cluster.py:238][INFO]- Process-1 stopping cluster processes
+[2019-08-05 21:53:34,768][MainThread:139956745475904][task_id:django-q][cluster.py:308][INFO]- Process-1:6 stopped pushing tasks
+[2019-08-05 21:53:34,822][MainThread:139956745475904][task_id:django-q][cluster.py:393][INFO]- Process-1:1 stopped doing work
+[2019-08-05 21:53:34,823][MainThread:139956745475904][task_id:django-q][cluster.py:393][INFO]- Process-1:2 stopped doing work
+[2019-08-05 21:53:34,824][MainThread:139956745475904][task_id:django-q][cluster.py:393][INFO]- Process-1:3 stopped doing work
+[2019-08-05 21:53:34,829][MainThread:139956745475904][task_id:django-q][cluster.py:393][INFO]- Process-1:4 stopped doing work
+[2019-08-05 21:53:35,242][MainThread:139956745475904][task_id:django-q][cluster.py:337][INFO]- Process-1:5 stopped monitoring results
+[2019-08-05 21:53:35,243][MainThread:139956745475904][task_id:django-q][cluster.py:263][INFO]- Process-1 waiting for the monitor.
+[2019-08-05 21:53:35,362][MainThread:139956745475904][task_id:django-q][cluster.py:64][INFO]- Q Cluster-10488 has stopped.
+[2019-08-05 21:55:03,039][MainThread:139979332654912][task_id:django-q][cluster.py:53][INFO]- Q Cluster-10513 starting.
+[2019-08-05 21:55:03,049][MainThread:139979332654912][task_id:django-q][cluster.py:348][INFO]- Process-1:1 ready for work at 10519
+[2019-08-05 21:55:03,051][MainThread:139979332654912][task_id:django-q][cluster.py:348][INFO]- Process-1:2 ready for work at 10520
+[2019-08-05 21:55:03,054][MainThread:139979332654912][task_id:django-q][cluster.py:348][INFO]- Process-1:3 ready for work at 10521
+[2019-08-05 21:55:03,059][MainThread:139979332654912][task_id:django-q][cluster.py:348][INFO]- Process-1:4 ready for work at 10522
+[2019-08-05 21:55:03,062][MainThread:139979332654912][task_id:django-q][cluster.py:319][INFO]- Process-1:5 monitoring at 10523
+[2019-08-05 21:55:03,063][MainThread:139979332654912][task_id:django-q][cluster.py:201][INFO]- Process-1 guarding cluster at 10518
+[2019-08-05 21:55:03,064][MainThread:139979332654912][task_id:django-q][cluster.py:284][INFO]- Process-1:6 pushing tasks at 10524
+[2019-08-05 21:55:03,066][MainThread:139979332654912][task_id:django-q][cluster.py:204][INFO]- Q Cluster-10513 running.
+[2019-08-05 21:58:20,521][Thread-63:140135610603264][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/icon-yes.svg
+[2019-08-05 21:58:20,522][Thread-64:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 21:58:27,617][Thread-67:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 21:58:27,630][Thread-68:140135610603264][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 21:59:00,443][Thread-86:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/icon-yes.svg
+[2019-08-05 21:59:00,446][Thread-87:140135610603264][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:03:33,637][Thread-170:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:03:33,673][Thread-171:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/sorting-icons.svg
+[2019-08-05 22:03:38,438][Thread-173:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 22:03:38,440][Thread-174:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 22:03:45,575][Thread-177:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:03:52,398][Thread-179:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 22:03:52,400][Thread-180:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 22:03:57,450][Thread-183:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:03:58,966][Thread-185:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 22:03:58,971][Thread-186:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 22:04:01,532][Thread-189:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:04:14,171][Thread-199:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/icon-yes.svg
+[2019-08-05 22:04:14,173][Thread-200:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:04:17,584][Thread-202:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 22:04:17,587][Thread-203:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 22:04:20,947][Thread-206:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:04:25,298][Thread-208:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 22:04:25,300][Thread-209:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 22:04:27,854][Thread-212:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:04:33,742][Thread-218:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/icon-yes.svg
+[2019-08-05 22:04:33,744][Thread-219:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:04:36,571][Thread-221:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 22:04:36,573][Thread-222:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 22:04:52,197][Thread-241:140135610603264][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:04:52,200][Thread-242:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/sorting-icons.svg
+[2019-08-05 22:04:58,134][Thread-244:140135610603264][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 22:04:58,137][Thread-245:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 22:05:00,067][Thread-248:140135610603264][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:05:06,019][Thread-252:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/icon-alert.svg
+[2019-08-05 22:05:06,022][Thread-253:140135610603264][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:05:08,360][Thread-255:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 22:05:08,362][Thread-256:140135610603264][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 22:05:11,432][Thread-259:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:05:11,434][Thread-260:140135610603264][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/sorting-icons.svg
+[2019-08-05 22:05:36,548][Thread-276:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:05:36,550][Thread-277:140135610603264][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/sorting-icons.svg
+[2019-08-05 22:06:06,512][Thread-299:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/sorting-icons.svg
+[2019-08-05 22:06:06,515][Thread-298:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:06:36,104][Thread-323:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:06:36,106][Thread-324:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/sorting-icons.svg
+[2019-08-05 22:07:45,294][Thread-344:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:07:45,298][Thread-345:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/sorting-icons.svg
+[2019-08-05 22:07:49,776][Thread-348:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 22:07:49,779][Thread-347:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 22:07:52,812][Thread-351:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:07:59,899][Thread-356:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:08:01,479][Thread-358:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 22:08:01,485][Thread-359:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 22:08:03,019][Thread-362:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:08:08,174][Thread-364:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-addlink.svg
+[2019-08-05 22:08:08,176][Thread-365:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/img/icon-changelink.svg
+[2019-08-05 22:08:10,816][Thread-368:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:08:13,434][Thread-371:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:08:13,436][Thread-372:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/sorting-icons.svg
+[2019-08-05 22:09:13,887][Thread-397:140135387625216][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/icon-yes.svg
+[2019-08-05 22:09:13,888][Thread-399:140135610603264][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/sorting-icons.svg
+[2019-08-05 22:09:13,889][Thread-398:140135602210560][task_id:django.request][base.py:93][WARNING]- Not Found: /admin/sql/img/tooltag-add.svg
+[2019-08-05 22:09:38,015][Thread-412:140135610603264][task_id:default][tasks.py:31][DEBUG]- 删除task：query-1565014178.0048716
+[2019-08-05 22:10:15,548][Thread-419:140135610603264][task_id:default][tasks.py:31][DEBUG]- 删除task：query-1565014215.5367436
+[2019-08-05 22:10:28,484][Thread-423:140135610603264][task_id:default][tasks.py:31][DEBUG]- 删除task：query-1565014228.4739292
+[2019-08-05 22:14:49,058][Thread-15:140166831679232][task_id:default][tasks.py:31][DEBUG]- 删除task：query-1565014489.04832
+[2019-08-06 14:09:29,247][MainThread:139928539563840][task_id:django-q][cluster.py:53][INFO]- Q Cluster-12352 starting.
+[2019-08-06 14:09:29,271][MainThread:139928539563840][task_id:django-q][cluster.py:348][INFO]- Process-1:1 ready for work at 12362
+[2019-08-06 14:09:29,273][MainThread:139928539563840][task_id:django-q][cluster.py:348][INFO]- Process-1:2 ready for work at 12363
+[2019-08-06 14:09:29,281][MainThread:139928539563840][task_id:django-q][cluster.py:348][INFO]- Process-1:3 ready for work at 12364
+[2019-08-06 14:09:29,288][MainThread:139928539563840][task_id:django-q][cluster.py:348][INFO]- Process-1:4 ready for work at 12365
+[2019-08-06 14:09:29,293][MainThread:139928539563840][task_id:django-q][cluster.py:319][INFO]- Process-1:5 monitoring at 12366
+[2019-08-06 14:09:29,295][MainThread:139928539563840][task_id:django-q][cluster.py:201][INFO]- Process-1 guarding cluster at 12361
+[2019-08-06 14:09:29,296][MainThread:139928539563840][task_id:django-q][cluster.py:284][INFO]- Process-1:6 pushing tasks at 12367
+[2019-08-06 14:09:29,298][MainThread:139928539563840][task_id:django-q][cluster.py:204][INFO]- Q Cluster-12352 running.
+[2019-08-06 14:10:09,135][Thread-51:140625877919488][task_id:default][tasks.py:31][DEBUG]- 删除task：query-1565071809.1250806
+<<<<<<< HEAD
+[2019-10-17 14:53:27,976][MainThread:140599767979840][task_id:django-q][cluster.py:53][INFO]- Q Cluster-12036 starting.
+[2019-10-17 14:53:28,041][MainThread:140599767979840][task_id:django-q][cluster.py:348][INFO]- Process-1:1 ready for work at 12043
+[2019-10-17 14:53:28,049][MainThread:140599767979840][task_id:django-q][cluster.py:348][INFO]- Process-1:2 ready for work at 12044
+[2019-10-17 14:53:28,067][MainThread:140599767979840][task_id:django-q][cluster.py:348][INFO]- Process-1:3 ready for work at 12045
+[2019-10-17 14:53:28,071][MainThread:140599767979840][task_id:django-q][cluster.py:348][INFO]- Process-1:4 ready for work at 12046
+[2019-10-17 14:53:28,078][MainThread:140599767979840][task_id:django-q][cluster.py:284][INFO]- Process-1:6 pushing tasks at 12048
+[2019-10-17 14:53:28,078][MainThread:140599767979840][task_id:django-q][cluster.py:201][INFO]- Process-1 guarding cluster at 12042
+[2019-10-17 14:53:28,084][MainThread:140599767979840][task_id:django-q][cluster.py:204][INFO]- Q Cluster-12036 running.
+[2019-10-17 14:53:28,087][MainThread:140599767979840][task_id:django-q][cluster.py:319][INFO]- Process-1:5 monitoring at 12047
+[2019-10-17 14:55:05,903][Thread-35:140534106531584][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-17 15:38:18,384][Thread-22:140384921085696][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-17 17:25:34,081][Thread-26:139742587905792][task_id:default][mysql.py:116][ERROR]- MySQL语句执行报错，语句：show databases，错误信息Traceback (most recent call last):
+  File "/opt/sql_archery/sql/engines/mysql.py", line 103, in query
+    conn = self.get_connection(db_name=db_name)
+  File "/opt/sql_archery/sql/engines/mysql.py", line 30, in get_connection
+    charset=self.instance.charset or 'utf8mb4')
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on '10.57.0.12' (110)")
+
+[2019-10-17 17:34:19,246][Thread-31:139742587905792][task_id:default][mysql.py:116][ERROR]- MySQL语句执行报错，语句：show databases，错误信息Traceback (most recent call last):
+  File "/opt/sql_archery/sql/engines/mysql.py", line 103, in query
+    conn = self.get_connection(db_name=db_name)
+  File "/opt/sql_archery/sql/engines/mysql.py", line 30, in get_connection
+=======
+[2019-10-17 14:09:17,897][Thread-42:140003518707456][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-17 14:09:21,302][Thread-52:140003518707456][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-17 14:09:28,756][Thread-95:140003732432640][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-17 14:09:39,105][Thread-104:140003732432640][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-17 14:11:11,094][Thread-107:140003732432640][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-17 14:11:40,698][Thread-158:140003510314752][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-17 16:30:50,232][Thread-9:140257444374272][task_id:default][exception_logging_middleware.py:11][ERROR]- Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/common/auth.py", line 109, in authenticate_entry
+    result = new_auth.authenticate()
+  File "/root/yx/sql_archery/common/auth.py", line 96, in authenticate
+    init_user(authenticated_user)
+  File "/root/yx/sql_archery/common/auth.py", line 39, in init_user
+    resource_group_id=ResourceGroup.objects.get(group_name=default_resource_group).group_id)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 487, in get_or_create
+    return self.get(**lookup), False
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1068, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+
+[2019-10-17 16:30:50,233][Thread-9:140257444374272][task_id:django.request][exception.py:118][ERROR]- Internal Server Error: /authenticate/
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/common/auth.py", line 109, in authenticate_entry
+    result = new_auth.authenticate()
+  File "/root/yx/sql_archery/common/auth.py", line 96, in authenticate
+    init_user(authenticated_user)
+  File "/root/yx/sql_archery/common/auth.py", line 39, in init_user
+    resource_group_id=ResourceGroup.objects.get(group_name=default_resource_group).group_id)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 487, in get_or_create
+    return self.get(**lookup), False
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1068, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+[2019-10-17 16:31:00,558][Thread-10:140257444374272][task_id:default][exception_logging_middleware.py:11][ERROR]- Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/common/auth.py", line 109, in authenticate_entry
+    result = new_auth.authenticate()
+  File "/root/yx/sql_archery/common/auth.py", line 96, in authenticate
+    init_user(authenticated_user)
+  File "/root/yx/sql_archery/common/auth.py", line 39, in init_user
+    resource_group_id=ResourceGroup.objects.get(group_name=default_resource_group).group_id)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 487, in get_or_create
+    return self.get(**lookup), False
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1068, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+
+[2019-10-17 16:31:00,559][Thread-10:140257444374272][task_id:django.request][exception.py:118][ERROR]- Internal Server Error: /authenticate/
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/common/auth.py", line 109, in authenticate_entry
+    result = new_auth.authenticate()
+  File "/root/yx/sql_archery/common/auth.py", line 96, in authenticate
+    init_user(authenticated_user)
+  File "/root/yx/sql_archery/common/auth.py", line 39, in init_user
+    resource_group_id=ResourceGroup.objects.get(group_name=default_resource_group).group_id)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 487, in get_or_create
+    return self.get(**lookup), False
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1068, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+[2019-10-17 16:31:55,243][Thread-8:140052722849536][task_id:default][exception_logging_middleware.py:11][ERROR]- Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/common/auth.py", line 109, in authenticate_entry
+    result = new_auth.authenticate()
+  File "/root/yx/sql_archery/common/auth.py", line 96, in authenticate
+    init_user(authenticated_user)
+  File "/root/yx/sql_archery/common/auth.py", line 39, in init_user
+    resource_group_id=ResourceGroup.objects.get(group_name=default_resource_group).group_id)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 487, in get_or_create
+    return self.get(**lookup), False
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1068, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+
+[2019-10-17 16:31:55,244][Thread-8:140052722849536][task_id:django.request][exception.py:118][ERROR]- Internal Server Error: /authenticate/
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/common/auth.py", line 109, in authenticate_entry
+    result = new_auth.authenticate()
+  File "/root/yx/sql_archery/common/auth.py", line 96, in authenticate
+    init_user(authenticated_user)
+  File "/root/yx/sql_archery/common/auth.py", line 39, in init_user
+    resource_group_id=ResourceGroup.objects.get(group_name=default_resource_group).group_id)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 487, in get_or_create
+    return self.get(**lookup), False
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1182, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1068, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'archery.resource_group_user' doesn't exist")
+[2019-10-17 16:34:02,439][Thread-21:140400646268672][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 10:18:23,391][Thread-34:139777037936384][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 10:18:46,312][Thread-68:139777037936384][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 10:19:12,908][Thread-83:139776690747136][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 10:19:21,298][Thread-90:139776690747136][task_id:default][exception_logging_middleware.py:11][ERROR]- Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+sql.models.DoesNotExist: SqlWorkflow matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/sql/views.py", line 100, in detail
+    workflow_detail = get_object_or_404(SqlWorkflow, pk=workflow_id)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/shortcuts.py", line 95, in get_object_or_404
+    raise Http404('No %s matches the given query.' % queryset.model._meta.object_name)
+django.http.response.Http404: No SqlWorkflow matches the given query.
+
+[2019-10-25 10:19:21,307][Thread-90:139776690747136][task_id:django.request][base.py:93][WARNING]- Not Found: /detail/364/
+[2019-10-25 10:20:35,455][Thread-18:139764834477824][task_id:default][exception_logging_middleware.py:11][ERROR]- Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+sql.models.DoesNotExist: SqlWorkflow matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/sql/views.py", line 100, in detail
+    workflow_detail = get_object_or_404(SqlWorkflow, pk=workflow_id)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/shortcuts.py", line 95, in get_object_or_404
+    raise Http404('No %s matches the given query.' % queryset.model._meta.object_name)
+django.http.response.Http404: No SqlWorkflow matches the given query.
+
+[2019-10-25 10:20:35,466][Thread-18:139764834477824][task_id:django.request][base.py:93][WARNING]- Not Found: /detail/364/
+[2019-10-25 10:20:35,536][Thread-19:139764834477824][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 10:21:03,420][Thread-74:139764845229824][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 10:21:08,551][Thread-88:139764834477824][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 10:21:19,047][Thread-104:139764834477824][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 10:39:21,077][Thread-8:140073796744960][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 12:31:04,029][Thread-146:140073714579200][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 12:31:07,355][Thread-152:140073714579200][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 13:50:53,399][Thread-185:140073714579200][task_id:default][inception.py:218][ERROR]- 获取回滚语句报错，异常信息Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 205, in get_rollback
+    cur.execute(sql_table)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.OperationalError: (1142, "SELECT command denied to user 'inception_rw'@'10.210.20.47' for table '$_$inception_backup_information$_$'")
+
+[2019-10-25 13:50:53,400][Thread-185:140073714579200][task_id:default][views.py:196][ERROR]- Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 205, in get_rollback
+    cur.execute(sql_table)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.OperationalError: (1142, "SELECT command denied to user 'inception_rw'@'10.210.20.47' for table '$_$inception_backup_information$_$'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/views.py", line 194, in rollback
+    list_backup_sql = query_engine.get_rollback(workflow=workflow)
+  File "/root/yx/sql_archery/sql/engines/mysql.py", line 264, in get_rollback
+    return inception_engine.get_rollback(workflow)
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 219, in get_rollback
+    raise Exception(e)
+Exception: (1142, "SELECT command denied to user 'inception_rw'@'10.210.20.47' for table '$_$inception_backup_information$_$'")
+
+[2019-10-25 13:51:32,197][Thread-202:140073714579200][task_id:default][inception.py:218][ERROR]- 获取回滚语句报错，异常信息Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 205, in get_rollback
+    cur.execute(sql_table)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.OperationalError: (1142, "SELECT command denied to user 'inception_rw'@'10.210.20.47' for table '$_$inception_backup_information$_$'")
+
+[2019-10-25 13:51:32,198][Thread-202:140073714579200][task_id:default][views.py:196][ERROR]- Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 205, in get_rollback
+    cur.execute(sql_table)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.OperationalError: (1142, "SELECT command denied to user 'inception_rw'@'10.210.20.47' for table '$_$inception_backup_information$_$'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/views.py", line 194, in rollback
+    list_backup_sql = query_engine.get_rollback(workflow=workflow)
+  File "/root/yx/sql_archery/sql/engines/mysql.py", line 264, in get_rollback
+    return inception_engine.get_rollback(workflow)
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 219, in get_rollback
+    raise Exception(e)
+Exception: (1142, "SELECT command denied to user 'inception_rw'@'10.210.20.47' for table '$_$inception_backup_information$_$'")
+
+[2019-10-25 13:52:53,696][Thread-217:140073706186496][task_id:django-q][tasks.py:60][INFO]- Enqueued 1
+[2019-10-25 13:52:53,697][Thread-217:140073706186496][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('ceiling-blossom-hydrogen-fruit', '97dfd1bd823f43e9b8ae86f09cb64b30')
+[2019-10-25 13:53:14,190][Thread-194:140073796744960][task_id:default][mysql.py:116][ERROR]- MySQL语句执行报错，语句：show databases，错误信息Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/mysql.py", line 103, in query
+    conn = self.get_connection(db_name=db_name)
+  File "/root/yx/sql_archery/sql/engines/mysql.py", line 30, in get_connection
+>>>>>>> hujingguang
+    charset=self.instance.charset or 'utf8mb4')
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/__init__.py", line 85, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+<<<<<<< HEAD
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on '10.57.0.12' (110)")
+
+=======
+_mysql_exceptions.OperationalError: (2003, "Can't connect to MySQL server on '10.57.68.241' (110)")
+
+[2019-10-25 13:53:41,906][Thread-227:140073796744960][task_id:django-q][tasks.py:60][INFO]- Enqueued 2
+[2019-10-25 13:53:41,906][Thread-227:140073796744960][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('magnesium-alaska-mango-saturn', '174e8158ff7443cb8927775b30d99fb6')
+[2019-10-25 13:54:05,124][Thread-236:140073796744960][task_id:django-q][tasks.py:60][INFO]- Enqueued 3
+[2019-10-25 13:54:05,124][Thread-236:140073796744960][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('dakota-vermont-friend-oscar', '636e5f7d8461454cbdfbf8ee4f810264')
+[2019-10-25 14:42:39,822][Thread-75:140070090700544][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 15:58:24,508][Thread-24:140344163301120][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 16:37:15,644][Thread-10:139924341241600][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 16:58:29,813][Thread-15:139639770486528][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-25 17:19:58,040][Thread-32:140546866546432][task_id:default][inception.py:147][ERROR]- Inception语句执行报错，语句：/*--user=db_archery;--password=42r8E4hhpG^7;--host=10.210.110.167;
+                            --port=3306;--enable-check=1;*/
+                            inception_magic_start;
+                            use `archery`;
+                            SELECT
+  timestampdiff(DAY, nowTime, abledTime) AS ltimeDiff
+FROM
+  (
+    SELECT
+      NOW() AS nowTime
+  ) AS f,
+  (
+    SELECT
+      SP_REGISTRATION_DATE AS abledTime
+    FROM
+      sys_supplies
+    WHERE
+      SP_LICENCE_NUMBER = '粤食药监械生产许20142525号'
+      AND SP_REGISTRATION_DATE - (
+        SELECT
+          NOW()
+      ) > 0
+  ) AS bb;
+                            inception_magic_commit;，错误信息Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 134, in query
+    cursor = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+
+[2019-10-25 17:19:58,041][Thread-32:140546866546432][task_id:default][mysql.py:182][DEBUG]- Inception检测语句报错：错误信息'NoneType' object has no attribute 'cursor'
+[2019-10-25 17:29:50,750][Thread-33:140546866546432][task_id:default][inception.py:147][ERROR]- Inception语句执行报错，语句：/*--user=db_archery;--password=42r8E4hhpG^7;--host=10.210.110.167;
+                            --port=3306;--enable-check=1;*/
+                            inception_magic_start;
+                            use `archery`;
+                            SELECT
+  timestampdiff(DAY, nowTime, abledTime) AS ltimeDiff
+FROM
+  (
+    SELECT
+      NOW() AS nowTime
+  ) AS f,
+  (
+    SELECT
+      SP_REGISTRATION_DATE AS abledTime
+    FROM
+      sys_supplies
+    WHERE
+      SP_LICENCE_NUMBER = '粤食药监械生产许20142525号'
+      AND SP_REGISTRATION_DATE - (
+        SELECT
+          NOW()
+      ) > 0
+  ) AS bb;
+                            inception_magic_commit;，错误信息Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 134, in query
+    cursor = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+
+[2019-10-25 17:29:50,750][Thread-33:140546866546432][task_id:default][mysql.py:182][DEBUG]- Inception检测语句报错：错误信息'NoneType' object has no attribute 'cursor'
+[2019-10-25 17:30:11,853][Thread-43:140546874939136][task_id:default][inception.py:147][ERROR]- Inception语句执行报错，语句：/*--user=db_archery;--password=42r8E4hhpG^7;--host=10.210.110.167;
+                            --port=3306;--enable-check=1;*/
+                            inception_magic_start;
+                            use `archery`;
+                            SELECT
+  timestampdiff(DAY, nowTime, abledTime) AS ltimeDiff
+FROM
+  (
+    SELECT
+      NOW() AS nowTime
+  ) AS f,
+  (
+    SELECT
+      SP_REGISTRATION_DATE AS abledTime
+    FROM
+      sys_supplies
+    WHERE
+      SP_LICENCE_NUMBER = '粤食药监械生产许20142525号'
+      AND SP_REGISTRATION_DATE - (
+        SELECT
+          NOW()
+      ) > 0
+  ) AS bb;
+                            inception_magic_commit;，错误信息Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 134, in query
+    cursor = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+
+[2019-10-25 17:30:11,853][Thread-43:140546874939136][task_id:default][mysql.py:182][DEBUG]- Inception检测语句报错：错误信息'NoneType' object has no attribute 'cursor'
+[2019-10-25 17:31:18,421][Thread-35:140601712846592][task_id:default][inception.py:148][ERROR]- Inception语句执行报错，语句：/*--user=db_archery;--password=42r8E4hhpG^7;--host=10.210.110.167;
+                            --port=3306;--enable-check=1;*/
+                            inception_magic_start;
+                            use `archery`;
+                            SELECT
+  timestampdiff(DAY, nowTime, abledTime) AS ltimeDiff
+FROM
+  (
+    SELECT
+      NOW() AS nowTime
+  ) AS f,
+  (
+    SELECT
+      SP_REGISTRATION_DATE AS abledTime
+    FROM
+      sys_supplies
+    WHERE
+      SP_LICENCE_NUMBER = '粤食药监械生产许20142525号'
+      AND SP_REGISTRATION_DATE - (
+        SELECT
+          NOW()
+      ) > 0
+  ) AS bb;
+                            inception_magic_commit;，错误信息Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 135, in query
+    cursor = conn.cursor()
+AttributeError: 'NoneType' object has no attribute 'cursor'
+
+[2019-10-25 17:31:18,421][Thread-35:140601712846592][task_id:default][mysql.py:182][DEBUG]- Inception检测语句报错：错误信息'NoneType' object has no attribute 'cursor'
+[2019-10-25 18:09:33,104][Thread-25:140022552307456][task_id:default][mysql.py:117][ERROR]- MySQL语句执行报错，语句：select * 123 from django_session limit 100;，错误信息Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/mysql.py", line 105, in query
+    effect_row = cursor.execute(sql)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 247, in execute
+    res = self._query(query)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 412, in _query
+    rowcount = self._do_query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/cursors.py", line 375, in _do_query
+    db.query(q)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/MySQLdb/connections.py", line 276, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '123 from django_session limit 100' at line 1")
+
+[2019-10-25 18:09:33,112][Thread-25:140022552307456][task_id:default][tasks.py:31][DEBUG]- 删除task：query-1571998173.093976
+[2019-10-28 09:53:50,360][Thread-27:140161145861888][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-28 10:00:32,850][Thread-29:140164354123520][task_id:default][mysql.py:178][DEBUG]- Inception检测语句报错：错误信息Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/mysql.py", line 176, in execute_check
+    inc_check_result = inception_engine.execute_check(instance=self.instance, db_name=db_name, sql=sql)
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 63, in execute_check
+    p
+NameError: name 'p' is not defined
+
+[2019-10-28 11:31:50,951][Thread-11:140087203460864][task_id:default][mysql.py:247][DEBUG]- Inception检测语句报错：错误信息Traceback (most recent call last):
+  File "/root/yx/sql_archery/sql/engines/mysql.py", line 245, in execute_select_check
+    sql=sql, conn=conn)
+  File "/root/yx/sql_archery/sql/engines/inception.py", line 126, in execute_select_check
+    inception_result = self.query(sql=inception_sql)
+NameError: name 'inception_sql' is not defined
+
+[2019-10-28 14:28:55,728][Thread-1:140093591504640][task_id:default][mysql.py:251][DEBUG]- Inception检测语句报错：错误信息(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x from django_session' at line 1")
+[2019-10-28 14:29:08,436][Thread-3:140093591504640][task_id:default][mysql.py:251][DEBUG]- Inception检测语句报错：错误信息(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'xxx from django_session' at line 1")
+[2019-10-28 14:31:26,622][Thread-1:140640607057664][task_id:default][mysql.py:251][DEBUG]- Inception检测语句报错：错误信息(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'xxfrom django_session' at line 1")
+[2019-10-28 14:31:39,973][Thread-3:140640607057664][task_id:default][mysql.py:251][DEBUG]- Inception检测语句报错：错误信息(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'xxfrom django_session' at line 1")
+[2019-10-28 14:31:42,747][Thread-4:140640607057664][task_id:default][mysql.py:251][DEBUG]- Inception检测语句报错：错误信息(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'xxfrom django_session' at line 1")
+[2019-10-28 14:31:45,364][Thread-5:140640607057664][task_id:default][mysql.py:251][DEBUG]- Inception检测语句报错：错误信息(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'xxfrom django_session' at line 1")
+[2019-10-28 14:31:48,999][Thread-6:140640607057664][task_id:default][mysql.py:251][DEBUG]- Inception检测语句报错：错误信息(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'xxfrom django_session' at line 1")
+[2019-10-28 14:44:56,471][Thread-21:139866898560768][task_id:default][mysql.py:251][DEBUG]- 检测语句报错：错误信息(1146, "Table 'archery.jdango_session' doesn't exist")
+[2019-10-28 15:05:55,097][Thread-16:139908851934976][task_id:default][mysql.py:251][DEBUG]- 检测语句报错：错误信息(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 1' at line 1")
+[2019-10-28 15:09:44,362][Thread-3:140324663113472][task_id:django-q][tasks.py:60][INFO]- Enqueued 4
+[2019-10-28 15:09:44,362][Thread-3:140324663113472][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('harry-east-potato-july', '7cc6dc3c85c749338f6af2a57d99fb72')
+[2019-10-28 15:09:55,434][Thread-6:140324663113472][task_id:django-q][tasks.py:60][INFO]- Enqueued 5
+[2019-10-28 15:09:55,435][Thread-6:140324663113472][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('orange-burger-cup-oklahoma', '85f938e1d8dd4a5387114df505de1a62')
+[2019-10-28 15:10:00,731][Thread-9:140324663113472][task_id:django-q][tasks.py:60][INFO]- Enqueued 6
+[2019-10-28 15:10:00,731][Thread-9:140324663113472][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('cardinal-seventeen-uniform-charlie', '49552b17c044490eab112479c208a649')
+[2019-10-28 15:10:01,873][Thread-12:140324663113472][task_id:django-q][tasks.py:60][INFO]- Enqueued 7
+[2019-10-28 15:10:01,874][Thread-12:140324663113472][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('december-wolfram-pennsylvania-zulu', '755664776f464e9eafc62fe88b947d9d')
+[2019-10-28 15:10:02,937][Thread-15:140324663113472][task_id:django-q][tasks.py:60][INFO]- Enqueued 8
+[2019-10-28 15:10:02,937][Thread-15:140324663113472][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('echo-whiskey-ohio-red', '3edc7da6bba247adb3958e0ad4f531a8')
+[2019-10-28 15:12:09,140][Thread-37:140324652099328][task_id:django-q][tasks.py:60][INFO]- Enqueued 9
+[2019-10-28 15:12:09,140][Thread-37:140324652099328][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('south-salami-river-harry', '429bd3c53949458ab75a81d5d552a17c')
+[2019-10-28 15:12:13,278][Thread-40:140324652099328][task_id:django-q][tasks.py:60][INFO]- Enqueued 10
+[2019-10-28 15:12:13,279][Thread-40:140324652099328][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('grey-hydrogen-oranges-virginia', '250c295753884af18e220d0773bcac93')
+[2019-10-28 15:12:14,291][Thread-43:140324652099328][task_id:django-q][tasks.py:60][INFO]- Enqueued 11
+[2019-10-28 15:12:14,291][Thread-43:140324652099328][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('sixteen-carpet-bakerloo-october', '4690e4fb5b31470fbe964e772f744fb5')
+[2019-10-28 15:12:15,609][Thread-46:140324652099328][task_id:django-q][tasks.py:60][INFO]- Enqueued 12
+[2019-10-28 15:12:15,609][Thread-46:140324652099328][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('glucose-avocado-quiet-failed', '27c6893ca4ea470695f5ea3d569434b7')
+[2019-10-28 15:12:16,914][Thread-49:140324652099328][task_id:django-q][tasks.py:60][INFO]- Enqueued 13
+[2019-10-28 15:12:16,914][Thread-49:140324652099328][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('carbon-california-robert-vegan', '8100e779ffe34e4c91e8cd0eff998905')
+[2019-10-28 15:18:03,296][Thread-4:139799097681664][task_id:django-q][tasks.py:60][INFO]- Enqueued 14
+[2019-10-28 15:18:03,296][Thread-4:139799097681664][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('four-nineteen-social-september', '9ebf81ecbb12487d869eb5616e8d5371')
+[2019-10-28 15:23:03,242][Thread-1:140667758282496][task_id:django-q][tasks.py:60][INFO]- Enqueued 15
+[2019-10-28 15:23:03,242][Thread-1:140667758282496][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('social-berlin-four-papa', 'a42abefcb6a64541a5ce4265cec749eb')
+[2019-10-28 16:19:01,786][Thread-16:140598151866112][task_id:django-q][tasks.py:60][INFO]- Enqueued 16
+[2019-10-28 16:19:01,786][Thread-16:140598151866112][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('potato-cold-social-batman', '8edccf2f319a45c7b41689e7c2702989')
+[2019-10-28 16:19:17,825][Thread-19:140598151866112][task_id:django-q][tasks.py:60][INFO]- Enqueued 17
+[2019-10-28 16:19:17,825][Thread-19:140598151866112][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('two-lactose-fillet-iowa', 'dbee35e483e14d5b8f2d51b75f78f0b1')
+[2019-10-28 16:20:28,391][Thread-3:140365120538368][task_id:django-q][tasks.py:60][INFO]- Enqueued 18
+[2019-10-28 16:20:28,391][Thread-3:140365120538368][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('yellow-white-five-equal', '6ed92a60dca340cbb4c222136234d3c5')
+[2019-10-28 16:21:29,136][Thread-30:140365120538368][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-28 16:21:36,841][Thread-31:140365120538368][task_id:django-q][tasks.py:60][INFO]- Enqueued 19
+[2019-10-28 16:21:36,841][Thread-31:140365120538368][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('jersey-kitten-pizza-william', '5155620fb005498f869554f7edf5779a')
+[2019-10-28 16:21:38,347][Thread-36:140365120538368][task_id:django-q][tasks.py:60][INFO]- Enqueued 20
+[2019-10-28 16:21:38,347][Thread-36:140365120538368][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('twenty-snake-social-uncle', '9fa2a07ed44c4b188231eb94020b5bb7')
+[2019-10-28 16:21:39,380][Thread-40:140365120538368][task_id:django-q][tasks.py:60][INFO]- Enqueued 21
+[2019-10-28 16:21:39,380][Thread-40:140365120538368][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('river-ceiling-sad-salami', '619c9eda32384c62a1eb4bbf9e9e328d')
+[2019-10-28 16:21:40,418][Thread-43:140365120538368][task_id:django-q][tasks.py:60][INFO]- Enqueued 22
+[2019-10-28 16:21:40,418][Thread-43:140365120538368][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('mars-lake-romeo-hydrogen', 'e8bb3bece3b34c69b00bd6d13825a4d9')
+[2019-10-28 16:27:01,454][Thread-111:140365025765120][task_id:django-q][tasks.py:60][INFO]- Enqueued 23
+[2019-10-28 16:27:01,454][Thread-111:140365025765120][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('nineteen-east-zebra-neptune', 'af8b5ee62f544704b3e6e843c5751038')
+[2019-10-28 16:27:11,400][Thread-123:140365025765120][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-28 16:27:21,773][Thread-138:140365017372416][task_id:django-q][tasks.py:60][INFO]- Enqueued 24
+[2019-10-28 16:27:21,773][Thread-138:140365017372416][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('yankee-five-potato-tango', 'c3bbac2863514431b5db528ed5b266d8')
+[2019-10-28 16:27:23,689][Thread-143:140365017372416][task_id:django-q][tasks.py:60][INFO]- Enqueued 25
+[2019-10-28 16:27:23,689][Thread-143:140365017372416][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('beryllium-sad-pip-carolina', 'b9c55138536648c3b12a3d09f70f22fb')
+[2019-10-28 16:27:23,986][Thread-146:140365017372416][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-28 16:27:25,042][Thread-147:140365017372416][task_id:django-q][tasks.py:60][INFO]- Enqueued 26
+[2019-10-28 16:27:25,043][Thread-147:140365017372416][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('emma-queen-autumn-cup', 'ba83bdba517b40dca7d3ed972f6980e8')
+[2019-10-28 16:27:26,610][Thread-150:140365017372416][task_id:django-q][tasks.py:60][INFO]- Enqueued 27
+[2019-10-28 16:27:26,611][Thread-150:140365017372416][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('yankee-ceiling-thirteen-single', 'ec71e081dc2942938eef7cc33dd2e0c9')
+[2019-10-28 16:28:33,430][Thread-187:140365025765120][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-28 16:28:41,256][Thread-196:140365025765120][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-28 16:28:50,187][Thread-205:140365017372416][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-28 17:09:27,750][Thread-40:139693140211456][task_id:django-q][tasks.py:60][INFO]- Enqueued 28
+[2019-10-28 17:09:27,750][Thread-40:139693140211456][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('two-oscar-fix-artist', '9b78a3a428c341028eae553da96f478b')
+[2019-10-28 17:09:29,148][Thread-43:139693140211456][task_id:django-q][tasks.py:60][INFO]- Enqueued 29
+[2019-10-28 17:09:29,148][Thread-43:139693140211456][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('fruit-snake-fish-hydrogen', 'd709f27d571d4acb9c192fec8a516ed5')
+[2019-10-28 17:09:29,996][Thread-46:139693140211456][task_id:django-q][tasks.py:60][INFO]- Enqueued 30
+[2019-10-28 17:09:29,996][Thread-46:139693140211456][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('florida-delaware-sixteen-mountain', 'c563648818bd4cd8a8f8b32a116b52bc')
+[2019-10-28 17:09:30,818][Thread-49:139693140211456][task_id:django-q][tasks.py:60][INFO]- Enqueued 31
+[2019-10-28 17:09:30,818][Thread-49:139693140211456][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('bacon-spaghetti-hydrogen-double', 'fb2119d31d2244abbb1113d9d5a1abea')
+[2019-10-28 17:09:31,681][Thread-52:139693140211456][task_id:django-q][tasks.py:60][INFO]- Enqueued 32
+[2019-10-28 17:09:31,681][Thread-52:139693140211456][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('missouri-golf-magazine-enemy', 'b4ce5fab9f324ab2ac6006b53f203313')
+[2019-10-28 17:15:16,841][Thread-82:140244573746944][task_id:django-q][tasks.py:60][INFO]- Enqueued 33
+[2019-10-28 17:15:16,842][Thread-82:140244573746944][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('undress-harry-saturn-ohio', 'f87aa6c204364c24be4784bd39e7cbb7')
+[2019-10-28 17:15:18,402][Thread-85:140244573746944][task_id:django-q][tasks.py:60][INFO]- Enqueued 34
+[2019-10-28 17:15:18,402][Thread-85:140244573746944][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('louisiana-alpha-dakota-cat', '8785b3ccfcf74847a1a887a1ded8edc8')
+[2019-10-28 17:15:19,286][Thread-88:140244573746944][task_id:django-q][tasks.py:60][INFO]- Enqueued 35
+[2019-10-28 17:15:19,286][Thread-88:140244573746944][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('foxtrot-vegan-wyoming-sodium', 'dbfecea528ba4b3388edff60c5665836')
+[2019-10-28 17:15:20,161][Thread-91:140244573746944][task_id:django-q][tasks.py:60][INFO]- Enqueued 36
+[2019-10-28 17:15:20,162][Thread-91:140244573746944][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('moon-pluto-mobile-happy', '958462e0778b48059a520c4baace764b')
+[2019-10-28 17:15:21,106][Thread-94:140244573746944][task_id:django-q][tasks.py:60][INFO]- Enqueued 37
+[2019-10-28 17:15:21,106][Thread-94:140244573746944][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('item-hawaii-november-juliet', '340f8edd0ea744b69401aaa0739a4ecb')
+[2019-10-28 17:16:55,377][Thread-1:139961419294464][task_id:default][exception_logging_middleware.py:11][ERROR]- Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 565, in execute_select
+    output_date()
+NameError: name 'output_date' is not defined
+
+[2019-10-28 17:16:55,378][Thread-1:139961419294464][task_id:django.request][exception.py:118][ERROR]- Internal Server Error: /executeSelect/
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 565, in execute_select
+    output_date()
+NameError: name 'output_date' is not defined
+[2019-10-28 17:17:36,254][Thread-35:139698597877504][task_id:django-q][tasks.py:60][INFO]- Enqueued 38
+[2019-10-28 17:17:36,254][Thread-35:139698597877504][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('berlin-pip-illinois-orange', 'ed3a25e6211e4fdf9cc2ab975f1e9b7f')
+[2019-10-28 17:17:37,482][Thread-38:139698597877504][task_id:django-q][tasks.py:60][INFO]- Enqueued 39
+[2019-10-28 17:17:37,482][Thread-38:139698597877504][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('bravo-gee-idaho-four', '0fbd2189aca74118b6f397b36755047a')
+[2019-10-28 17:17:38,279][Thread-41:139698597877504][task_id:django-q][tasks.py:60][INFO]- Enqueued 40
+[2019-10-28 17:17:38,280][Thread-41:139698597877504][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('early-alaska-wisconsin-zebra', 'f7344db815384e60848540b9f9d39b4f')
+[2019-10-28 17:17:39,113][Thread-44:139698597877504][task_id:django-q][tasks.py:60][INFO]- Enqueued 41
+[2019-10-28 17:17:39,114][Thread-44:139698597877504][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('delta-charlie-sodium-venus', '8cdcf89a19754b02935de3e02bab4f24')
+[2019-10-28 17:17:40,105][Thread-47:139698597877504][task_id:django-q][tasks.py:60][INFO]- Enqueued 42
+[2019-10-28 17:17:40,106][Thread-47:139698597877504][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('zebra-oxygen-johnny-early', 'b88139fe2ce74a2b94fd4c4e8f8f4e78')
+[2019-10-28 17:28:31,132][Thread-11:140191339816704][task_id:default][mysql.py:251][DEBUG]- 检测语句报错：错误信息(1146, "Table 'archery.djsdfas' doesn't exist")
+[2019-10-28 17:28:39,374][Thread-13:140191339816704][task_id:django-q][tasks.py:60][INFO]- Enqueued 43
+[2019-10-28 17:28:39,374][Thread-13:140191339816704][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('idaho-uncle-mexico-california', 'c316bd0990fc4ec78f78304f9ed9e6bf')
+[2019-10-28 17:28:41,080][Thread-16:140191339816704][task_id:django-q][tasks.py:60][INFO]- Enqueued 44
+[2019-10-28 17:28:41,081][Thread-16:140191339816704][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('oxygen-uranus-artist-island', '01576a962fc14244bed7690a4bece020')
+[2019-10-28 17:28:42,014][Thread-19:140191339816704][task_id:django-q][tasks.py:60][INFO]- Enqueued 45
+[2019-10-28 17:28:42,014][Thread-19:140191339816704][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('echo-december-west-hydrogen', 'e345bd2287ca4b36b0f653e7fd83f2ec')
+[2019-10-28 17:28:43,199][Thread-22:140191339816704][task_id:django-q][tasks.py:60][INFO]- Enqueued 46
+[2019-10-28 17:28:43,199][Thread-22:140191339816704][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('avocado-hydrogen-nine-chicken', '36f02de4205d4954bbaadf550147accc')
+[2019-10-28 17:28:44,015][Thread-25:140191339816704][task_id:django-q][tasks.py:60][INFO]- Enqueued 47
+[2019-10-28 17:28:44,015][Thread-25:140191339816704][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('bakerloo-fillet-island-violet', 'f3ea959dd9ad4a7a963a6ca7211bfb2e')
+[2019-10-28 17:28:46,741][Thread-28:140191339816704][task_id:default][exception_logging_middleware.py:11][ERROR]- Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 567, in execute_select
+    output_data()
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 561, in output_data
+    sql_content = workflow_datail.sqlworkflowcontent.sql_content
+NameError: name 'workflow_datail' is not defined
+
+[2019-10-28 17:28:46,742][Thread-28:140191339816704][task_id:django.request][exception.py:118][ERROR]- Internal Server Error: /executeSelect/
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 567, in execute_select
+    output_data()
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 561, in output_data
+    sql_content = workflow_datail.sqlworkflowcontent.sql_content
+NameError: name 'workflow_datail' is not defined
+[2019-10-28 17:29:58,947][Thread-17:140475139266304][task_id:django-q][tasks.py:60][INFO]- Enqueued 48
+[2019-10-28 17:29:58,947][Thread-17:140475139266304][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('enemy-batman-bluebird-sierra', '3b9a49d790e646228df0b7d386fad861')
+[2019-10-28 17:30:01,539][Thread-20:140475139266304][task_id:django-q][tasks.py:60][INFO]- Enqueued 49
+[2019-10-28 17:30:01,540][Thread-20:140475139266304][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('low-solar-sodium-apart', 'a20731ea449f4c59b466edf2cc72d56d')
+[2019-10-28 17:30:02,624][Thread-23:140475139266304][task_id:django-q][tasks.py:60][INFO]- Enqueued 50
+[2019-10-28 17:30:02,624][Thread-23:140475139266304][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('table-vermont-jersey-mobile', '102723cc36d049438866e3645ac26b7c')
+[2019-10-28 17:30:03,425][Thread-26:140475139266304][task_id:django-q][tasks.py:60][INFO]- Enqueued 51
+[2019-10-28 17:30:03,425][Thread-26:140475139266304][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('lion-maine-fruit-paris', 'a968bc07053943fe8a89cb99328b6471')
+[2019-10-28 17:30:04,633][Thread-29:140475139266304][task_id:django-q][tasks.py:60][INFO]- Enqueued 52
+[2019-10-28 17:30:04,634][Thread-29:140475139266304][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('football-sodium-tango-triple', '3bd39e3d95c241db858ff32052bfbeb2')
+[2019-10-28 17:33:25,456][Thread-12:139934282049280][task_id:django-q][tasks.py:60][INFO]- Enqueued 53
+[2019-10-28 17:33:25,456][Thread-12:139934282049280][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('bacon-blue-robin-high', 'a1d0a4c5a3a14d578deaff23f166a862')
+[2019-10-28 17:33:26,905][Thread-15:139934282049280][task_id:django-q][tasks.py:60][INFO]- Enqueued 54
+[2019-10-28 17:33:26,905][Thread-15:139934282049280][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('bravo-robin-asparagus-delta', 'ce7469c92197404daac298fb26013722')
+[2019-10-28 17:33:27,539][Thread-18:139934282049280][task_id:django-q][tasks.py:60][INFO]- Enqueued 55
+[2019-10-28 17:33:27,539][Thread-18:139934282049280][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('montana-maryland-romeo-equal', 'e45693b337a04f5dbf3c1827407d9ae7')
+[2019-10-28 17:33:28,289][Thread-21:139934282049280][task_id:django-q][tasks.py:60][INFO]- Enqueued 56
+[2019-10-28 17:33:28,289][Thread-21:139934282049280][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('vegan-oklahoma-golf-angel', 'f837f5d0cef446dfbe7b79e9461883d8')
+[2019-10-28 17:33:29,109][Thread-24:139934282049280][task_id:django-q][tasks.py:60][INFO]- Enqueued 57
+[2019-10-28 17:33:29,110][Thread-24:139934282049280][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('hotel-mirror-eight-snake', '3312fe804c9f451ab76c0aea9e752707')
+[2019-10-28 17:35:12,469][Thread-12:140662408345344][task_id:django-q][tasks.py:60][INFO]- Enqueued 58
+[2019-10-28 17:35:12,469][Thread-12:140662408345344][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('alaska-freddie-georgia-artist', '866028cd77f84181ac2b4c980effb44f')
+[2019-10-28 17:35:13,690][Thread-15:140662408345344][task_id:django-q][tasks.py:60][INFO]- Enqueued 59
+[2019-10-28 17:35:13,690][Thread-15:140662408345344][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('artist-lemon-undress-may', '822b76d597ef444baa53829d10202493')
+[2019-10-28 17:35:14,558][Thread-18:140662408345344][task_id:django-q][tasks.py:60][INFO]- Enqueued 60
+[2019-10-28 17:35:14,558][Thread-18:140662408345344][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('virginia-missouri-double-hotel', 'c16181d1fa594f62a5a71e29a3f9a0a5')
+[2019-10-28 17:35:15,328][Thread-21:140662408345344][task_id:django-q][tasks.py:60][INFO]- Enqueued 61
+[2019-10-28 17:35:15,328][Thread-21:140662408345344][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('north-lithium-autumn-golf', '460f1bcc763d4f7f9b727f9894fd80bc')
+[2019-10-28 17:35:16,109][Thread-24:140662408345344][task_id:django-q][tasks.py:60][INFO]- Enqueued 62
+[2019-10-28 17:35:16,109][Thread-24:140662408345344][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('avocado-eighteen-fish-zebra', '03a6cf65f3df4050bfd0123b626acf39')
+[2019-10-28 17:41:44,224][Thread-12:140308528494336][task_id:django-q][tasks.py:60][INFO]- Enqueued 63
+[2019-10-28 17:41:44,225][Thread-12:140308528494336][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('spring-earth-east-juliet', '34022dc9b3064ac8b30a27a63a5a5458')
+[2019-10-28 17:41:45,648][Thread-15:140308528494336][task_id:django-q][tasks.py:60][INFO]- Enqueued 64
+[2019-10-28 17:41:45,649][Thread-15:140308528494336][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('bacon-texas-low-diet', '22afa73a208d4e3eb4583daf746f1a32')
+[2019-10-28 17:41:46,470][Thread-18:140308528494336][task_id:django-q][tasks.py:60][INFO]- Enqueued 65
+[2019-10-28 17:41:46,471][Thread-18:140308528494336][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('papa-wyoming-queen-maryland', 'd044f1ce723449f59bbcd746b623c7d7')
+[2019-10-28 17:41:47,252][Thread-21:140308528494336][task_id:django-q][tasks.py:60][INFO]- Enqueued 66
+[2019-10-28 17:41:47,252][Thread-21:140308528494336][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('stream-nuts-three-floor', '845ddfd311904f6e88563d3c7b682d77')
+[2019-10-28 17:41:48,214][Thread-24:140308528494336][task_id:django-q][tasks.py:60][INFO]- Enqueued 67
+[2019-10-28 17:41:48,214][Thread-24:140308528494336][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('jersey-four-neptune-winner', 'afde150da93d449cb6c809efb4f957ec')
+[2019-10-28 17:41:49,975][Thread-27:140308528494336][task_id:default][exception_logging_middleware.py:11][ERROR]- Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 568, in execute_select
+    output_data()
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 567, in output_data
+    result=os.system(sql_cmd)
+NameError: name 'os' is not defined
+
+[2019-10-28 17:41:49,975][Thread-27:140308528494336][task_id:django.request][exception.py:118][ERROR]- Internal Server Error: /executeSelect/
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 568, in execute_select
+    output_data()
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 567, in output_data
+    result=os.system(sql_cmd)
+NameError: name 'os' is not defined
+[2019-10-28 17:44:06,685][Thread-21:139829933868800][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-28 17:44:31,472][Thread-40:139829952751360][task_id:django-q][tasks.py:60][INFO]- Enqueued 68
+[2019-10-28 17:44:31,473][Thread-40:139829952751360][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('winter-mississippi-juliet-sink', '98865cb54385410a84efc2c562cf2c46')
+[2019-10-28 17:44:33,328][Thread-43:139829952751360][task_id:django-q][tasks.py:60][INFO]- Enqueued 69
+[2019-10-28 17:44:33,328][Thread-43:139829952751360][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('nebraska-uncle-happy-zebra', '00f260057e134ac2a631f739af30a3c2')
+[2019-10-28 17:44:33,911][Thread-46:139829952751360][task_id:django-q][tasks.py:60][INFO]- Enqueued 70
+[2019-10-28 17:44:33,911][Thread-46:139829952751360][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('summer-hawaii-grey-iowa', 'a114aac932ba4d9e8e06914e3e2adeac')
+[2019-10-28 17:44:34,573][Thread-49:139829952751360][task_id:django-q][tasks.py:60][INFO]- Enqueued 71
+[2019-10-28 17:44:34,574][Thread-49:139829952751360][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('missouri-helium-fruit-carolina', '7d48a71c93ce47469083d193967969a7')
+[2019-10-28 17:44:35,247][Thread-52:139829952751360][task_id:django-q][tasks.py:60][INFO]- Enqueued 72
+[2019-10-28 17:44:35,247][Thread-52:139829952751360][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('twenty-beryllium-spring-ten', '2e10e73a3ae94d8b9241d4d582da44c6')
+[2019-10-28 18:03:45,040][Thread-12:140642692470528][task_id:django-q][tasks.py:60][INFO]- Enqueued 73
+[2019-10-28 18:03:45,040][Thread-12:140642692470528][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('quiet-comet-equal-virginia', '6f37c42b52034339b44fdd66bbfaa819')
+[2019-10-28 18:03:46,363][Thread-15:140642692470528][task_id:django-q][tasks.py:60][INFO]- Enqueued 74
+[2019-10-28 18:03:46,363][Thread-15:140642692470528][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('mars-emma-mississippi-yankee', '72e46270eff148689f383e14f3527429')
+[2019-10-28 18:03:47,182][Thread-18:140642692470528][task_id:django-q][tasks.py:60][INFO]- Enqueued 75
+[2019-10-28 18:03:47,182][Thread-18:140642692470528][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('california-shade-nuts-oxygen', '25148fa06b0e4decba0cd2c46fc69794')
+[2019-10-28 18:03:47,976][Thread-21:140642692470528][task_id:django-q][tasks.py:60][INFO]- Enqueued 76
+[2019-10-28 18:03:47,977][Thread-21:140642692470528][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('eleven-east-papa-gee', 'f3b85d2b733a4d3cac65d3b191edfcd2')
+[2019-10-28 18:03:48,646][Thread-24:140642692470528][task_id:django-q][tasks.py:60][INFO]- Enqueued 77
+[2019-10-28 18:03:48,646][Thread-24:140642692470528][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('two-apart-eleven-cat', '997a393e6ed24df79e985f64362e95ae')
+[2019-10-28 18:03:50,653][Thread-27:140642692470528][task_id:default][exception_logging_middleware.py:11][ERROR]- Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 572, in execute_select
+    if output_data() == 0 and os.path.exists(output_file):
+NameError: name 'output_file' is not defined
+
+[2019-10-28 18:03:50,654][Thread-27:140642692470528][task_id:django.request][exception.py:118][ERROR]- Internal Server Error: /executeSelect/
+Traceback (most recent call last):
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/yx/sql_archery/sql/sql_workflow.py", line 572, in execute_select
+    if output_data() == 0 and os.path.exists(output_file):
+NameError: name 'output_file' is not defined
+[2019-10-28 18:05:57,874][Thread-14:139910304233216][task_id:django-q][tasks.py:60][INFO]- Enqueued 78
+[2019-10-28 18:05:57,874][Thread-14:139910304233216][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('solar-seventeen-edward-foxtrot', '40af6a4b51e143309d7617c611b3d834')
+[2019-10-28 18:05:59,078][Thread-17:139910304233216][task_id:django-q][tasks.py:60][INFO]- Enqueued 79
+[2019-10-28 18:05:59,078][Thread-17:139910304233216][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('asparagus-snake-nevada-black', 'fadbaa80e69943f79c62482c0e39f1d0')
+[2019-10-28 18:05:59,974][Thread-20:139910304233216][task_id:django-q][tasks.py:60][INFO]- Enqueued 80
+[2019-10-28 18:05:59,974][Thread-20:139910304233216][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('harry-yellow-river-oven', 'c95d69a751b14d50988c02af88fbb56f')
+[2019-10-28 18:06:00,762][Thread-23:139910304233216][task_id:django-q][tasks.py:60][INFO]- Enqueued 81
+[2019-10-28 18:06:00,762][Thread-23:139910304233216][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('sink-summer-tango-angel', 'dd471b46968d4489a4aac0171b292d1a')
+[2019-10-28 18:06:01,651][Thread-26:139910304233216][task_id:django-q][tasks.py:60][INFO]- Enqueued 82
+[2019-10-28 18:06:01,652][Thread-26:139910304233216][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('mexico-minnesota-beer-pizza', 'e69bd32608d04b18b2fdd68ace8bec19')
+[2019-10-28 18:08:28,258][Thread-82:139910304233216][task_id:django-q][tasks.py:60][INFO]- Enqueued 83
+[2019-10-28 18:08:28,258][Thread-82:139910304233216][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('magnesium-video-nuts-nitrogen', '4a7150eb1c2b4c9596f09553ded6e174')
+[2019-10-28 18:08:29,857][Thread-85:139910304233216][task_id:django-q][tasks.py:60][INFO]- Enqueued 84
+[2019-10-28 18:08:29,858][Thread-85:139910304233216][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('south-muppet-nevada-oklahoma', 'b4b3468e90f54dbdabd49d78d068a3b8')
+[2019-10-28 18:08:30,807][Thread-88:139910304233216][task_id:django-q][tasks.py:60][INFO]- Enqueued 85
+[2019-10-28 18:08:30,808][Thread-88:139910304233216][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('quiet-lake-william-ohio', '7931827d03364a0a9ab3dd019e02aa94')
+[2019-10-28 18:08:31,651][Thread-91:139910304233216][task_id:django-q][tasks.py:60][INFO]- Enqueued 86
+[2019-10-28 18:08:31,652][Thread-91:139910304233216][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('crazy-johnny-lactose-lake', '1d99369fb6b6412aa83512fbaf19a665')
+[2019-10-28 18:08:32,420][Thread-94:139910304233216][task_id:django-q][tasks.py:60][INFO]- Enqueued 87
+[2019-10-28 18:08:32,420][Thread-94:139910304233216][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('orange-illinois-fruit-thirteen', '58405fe21f7b484ea88a1764aabc4d85')
+[2019-10-28 18:10:51,122][Thread-135:139910304233216][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-28 18:11:24,446][Thread-163:139910381913856][task_id:django-q][tasks.py:60][INFO]- Enqueued 88
+[2019-10-28 18:11:24,446][Thread-163:139910381913856][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('jig-coffee-hawaii-missouri', '380dbfe07d124e0694e3163a2c0318b9')
+[2019-10-28 18:11:27,395][Thread-169:139910381913856][task_id:django-q][tasks.py:60][INFO]- Enqueued 89
+[2019-10-28 18:11:27,395][Thread-169:139910381913856][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('maine-cat-quiet-nineteen', 'd5f765c6f0b1482a8bb4af2719bc93aa')
+[2019-10-28 18:11:28,683][Thread-172:139910287185664][task_id:django-q][tasks.py:60][INFO]- Enqueued 90
+[2019-10-28 18:11:28,683][Thread-172:139910287185664][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('diet-bluebird-bakerloo-connecticut', 'aa7890716e0d4a308ee1502ed762861f')
+[2019-10-28 18:11:29,983][Thread-175:139910381913856][task_id:django-q][tasks.py:60][INFO]- Enqueued 91
+[2019-10-28 18:11:29,983][Thread-175:139910381913856][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('april-solar-nineteen-mountain', 'b8b3131f01904c13920fd4d53ca1555c')
+[2019-10-28 18:11:35,170][Thread-184:139910287185664][task_id:django-q][tasks.py:60][INFO]- Enqueued 92
+[2019-10-28 18:11:35,170][Thread-184:139910287185664][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('mango-robert-one-neptune', '89c410dfae234b7c811d9aa283cd77a1')
+[2019-10-28 18:18:53,323][Thread-293:139910381913856][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-28 18:19:41,967][Thread-327:139910269613824][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+[2019-10-28 18:22:24,749][Thread-368:139910287185664][task_id:django-q][tasks.py:60][INFO]- Enqueued 93
+[2019-10-28 18:22:24,749][Thread-368:139910287185664][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('six-winter-zebra-alabama', '6bca6108f0dd4f9592c2a709e74ed47c')
+[2019-10-28 18:22:26,793][Thread-372:139910287185664][task_id:django-q][tasks.py:60][INFO]- Enqueued 94
+[2019-10-28 18:22:26,794][Thread-372:139910287185664][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('king-mockingbird-oven-tennessee', '7889fb78908646c0afda4b978d657c4f')
+[2019-10-28 18:22:27,897][Thread-375:139910287185664][task_id:django-q][tasks.py:60][INFO]- Enqueued 95
+[2019-10-28 18:22:27,897][Thread-375:139910287185664][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('item-friend-six-summer', '15df0ba9c9fb4b2986204628dafb24d3')
+[2019-10-28 18:22:28,878][Thread-378:139910287185664][task_id:django-q][tasks.py:60][INFO]- Enqueued 96
+[2019-10-28 18:22:28,878][Thread-378:139910287185664][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('connecticut-mango-mobile-georgia', 'a2888d8b6f874d2793c91bcea7259e4f')
+[2019-10-28 18:22:30,490][Thread-381:139910287185664][task_id:django-q][tasks.py:60][INFO]- Enqueued 97
+[2019-10-28 18:22:30,490][Thread-381:139910287185664][task_id:django-q][tasks.py:61][DEBUG]- Pushed ('triple-ceiling-charlie-sixteen', '8c2f2466c2894728832a0e828e328efb')
+[2019-10-28 18:22:33,081][Thread-386:139910287185664][task_id:django.request][base.py:93][WARNING]- Not Found: /favicon.ico
+>>>>>>> hujingguang

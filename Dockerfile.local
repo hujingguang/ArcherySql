@@ -1,0 +1,15 @@
+FROM sql_archery/base base:latest
+MAINTAINER "hujingguangsa@gmail.com" 
+WORKDIR /opt
+ENV LANG en_US.utf8
+ENV TZ Asia/Shanghai 
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+ADD ./sql_archery /opt/sql_archery
+CMD /opt/start.sh
+
+
+   
+
+
+
+
