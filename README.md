@@ -21,3 +21,4 @@
 ============
 
 当前项目是从Archery v1.6.5开始进行二次开发，运行 ./build.sh 制作运行镜像
+docker pull registry.cn-shenzhen.aliyuncs.com/hoover/hoover:sql_archery_v2.0.7
