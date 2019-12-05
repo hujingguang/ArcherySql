@@ -21,4 +21,28 @@
 ============
 
 当前项目是从Archery v1.6.5开始进行二次开发，运行 ./build.sh 制作运行镜像
-docker pull registry.cn-shenzhen.aliyuncs.com/hoover/hoover:sql_archery_v2.0.7
+docker pull registry.cn-shenzhen.aliyuncs.com/hoover/hoover:sql_archery_common
+启动工程  docker run --name sql_archery -v /opt/sql_archery/settings.py:/opt/sql_archery/archery/settings.py -p 80:99 registry.cn-shenzhen.aliyuncs.com/hoover/hoover:sql_archery_common
+(注意:启动的时候需要修改settings.py文件，配置redis,mysql和mongo)
+
+依赖组件： inception,redis，mysql,mongodb
+
+cat inception.conf
+**********************
+[inception]
+general_log=1
+general_log_file=inception.log
+port=6669
+socket=/tmp/inc.socket
+character-set-client-handshake=0
+character-set-server=utf8
+inception_remote_system_password=123123
+inception_remote_system_user=guest
+inception_remote_backup_port=3306
+inception_remote_backup_host=10.210.110.159
+inception_support_charset=utf8,utf8mb4
+inception_osc_on=ON
+inception_osc_bin_dir=/usr/bin
+*********************
+
+
