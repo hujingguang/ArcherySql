@@ -258,7 +258,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('instance_name', models.CharField(max_length=50, unique=True, verbose_name='实例名称')),
-                ('type', models.CharField(choices=[('master', '主库'), ('slave', '从库')], max_length=6, verbose_name='实例类型')),
+                ('type', models.CharField(choices=[('main', '主库'), ('subordinate', '从库')], max_length=6, verbose_name='实例类型')),
                 ('db_type', models.CharField(choices=[('mysql', 'MySQL'), ('mssql', 'MsSQL'), ('redis', 'Redis'), ('pgsql', 'PgSQL'), ('oracle', 'Oracle'), ('inception', 'Inception'), ('goinception', 'goInception')], max_length=20, verbose_name='数据库类型')),
                 ('host', models.CharField(max_length=200, verbose_name='实例连接')),
                 ('port', models.IntegerField(default=0, verbose_name='端口')),

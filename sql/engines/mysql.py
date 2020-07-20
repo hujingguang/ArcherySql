@@ -40,9 +40,9 @@ class MysqlEngine(EngineBase):
         return 'MySQL engine'
 
     @property
-    def seconds_behind_master(self):
-        slave_status = self.query(sql='show slave status')
-        return slave_status.rows[0][32] if slave_status.rows else None
+    def seconds_behind_main(self):
+        subordinate_status = self.query(sql='show subordinate status')
+        return subordinate_status.rows[0][32] if subordinate_status.rows else None
 
     @property
     def server_version(self):

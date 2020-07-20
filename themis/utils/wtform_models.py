@@ -88,12 +88,12 @@ class SimpleForm(BaseForm):
 
     def validate_rule_cmd(form, field):
         db_key = ("\b(exec|execute|insert|select|delete|update|alter|create|"
-                  "drop|count|chr|char|asc|mid|substring|master|truncate|"
+                  "drop|count|chr|char|asc|mid|substring|main|truncate|"
                   "declare|xp_cmdshell|restore|backup|net)\b")
         mongo_key = r"""\b(update|delete|drop|remove|killcursors|dropdatabase
                         |dropindex|reindex|lock|unlock|fsync|setprofilingLevel
                         |repairDatabase|removeUser|shutdownServer|killOp|eval
-                        |copyDatabase|cloneDatabase|addUser|setSlaveOk)\b"""
+                        |copyDatabase|cloneDatabase|addUser|setSubordinateOk)\b"""
         regex = re.compile(mongo_key, re.I)
         m = regex.search(field.data)
         if m:
