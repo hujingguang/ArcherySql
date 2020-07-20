@@ -214,9 +214,9 @@ class CheckTest(TestCase):
         self.superuser1 = User(username='test_user', display='中文显示', is_active=True, is_superuser=True,
                                email='XXX@xxx.com')
         self.superuser1.save()
-        self.slave1 = Instance(instance_name='some_name', host='some_host', type='slave', db_type='mysql',
+        self.subordinate1 = Instance(instance_name='some_name', host='some_host', type='subordinate', db_type='mysql',
                                user='some_user', port=1234, password='some_password')
-        self.slave1.save()
+        self.subordinate1.save()
 
     def tearDown(self):
         self.superuser1.delete()
@@ -317,7 +317,7 @@ class CheckTest(TestCase):
         _get_engine.return_value.get_connection = _conn
         c = Client()
         c.force_login(self.superuser1)
-        r = c.post('/check/instance/', data={'instance_id': self.slave1.id})
+        r = c.post('/check/instance/', data={'instance_id': self.subordinate1.id})
         r_json = r.json()
         self.assertEqual(r_json['status'], 0)
 
@@ -366,9 +366,9 @@ class ChartTest(TestCase):
         cls.superuser1 = User(username='super1', is_superuser=True)
         cls.superuser1.save()
         cls.now = datetime.datetime.now()
-        cls.slave1 = Instance(instance_name='test_slave_instance', type='slave', db_type='mysql',
+        cls.subordinate1 = Instance(instance_name='test_subordinate_instance', type='subordinate', db_type='mysql',
                               host='testhost', port=3306, user='mysql_user', password='mysql_password')
-        cls.slave1.save()
+        cls.subordinate1.save()
         # 批量创建数据 ddl ,u1 ,g1, yesterday 组, 2 个数据
         ddl_workflow = [SqlWorkflow(
             workflow_name='ddl %s' % i,
@@ -380,7 +380,7 @@ class ChartTest(TestCase):
             create_time=cls.now - datetime.timedelta(days=1),
             status='workflow_finish',
             is_backup=True,
-            instance=cls.slave1,
+            instance=cls.subordinate1,
             db_name='some_db',
             syntax_type=1
         ) for i in range(2)]
@@ -395,7 +395,7 @@ class ChartTest(TestCase):
             create_time=cls.now - datetime.timedelta(days=2),
             status='workflow_finish',
             is_backup=True,
-            instance=cls.slave1,
+            instance=cls.subordinate1,
             db_name='some_db',
             syntax_type=2
         ) for i in range(3)]
@@ -424,7 +424,7 @@ class ChartTest(TestCase):
         cls.u1.delete()
         cls.u2.delete()
         cls.superuser1.delete()
-        cls.slave1.delete()
+        cls.subordinate1.delete()
 
     def testGetDateList(self):
         dao = ChartDao()

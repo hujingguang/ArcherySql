@@ -152,7 +152,7 @@ class TestQueryPrivilegesCheck(TestCase):
         self.user_can_query_all.user_permissions.add(query_all_instance_perm)
         self.user = User.objects.create(username='user')
         # 使用 travis.ci 时实例和测试service保持一致
-        self.slave = Instance.objects.create(instance_name='test_instance', type='slave', db_type='mysql',
+        self.subordinate = Instance.objects.create(instance_name='test_instance', type='subordinate', db_type='mysql',
                                              host=settings.DATABASES['default']['HOST'],
                                              port=settings.DATABASES['default']['PORT'],
                                              user=settings.DATABASES['default']['USER'],
@@ -175,7 +175,7 @@ class TestQueryPrivilegesCheck(TestCase):
         """
         self.sys_config.set('admin_query_limit', '50')
         self.sys_config.get_all_config()
-        r = sql.query_privileges._db_priv(user=self.superuser, instance=self.slave, db_name=self.db_name)
+        r = sql.query_privileges._db_priv(user=self.superuser, instance=self.subordinate, db_name=self.db_name)
         self.assertEqual(r, 50)
 
     def test_db_priv_user_priv_not_exist(self):
@@ -183,7 +183,7 @@ class TestQueryPrivilegesCheck(TestCase):
         测试普通用户验证数据库权限，用户无权限
         :return:
         """
-        r = sql.query_privileges._db_priv(user=self.user, instance=self.slave, db_name=self.db_name)
+        r = sql.query_privileges._db_priv(user=self.user, instance=self.subordinate, db_name=self.db_name)
         self.assertFalse(r)
 
     def test_db_priv_user_priv_exist(self):
@@ -192,12 +192,12 @@ class TestQueryPrivilegesCheck(TestCase):
         :return:
         """
         QueryPrivileges.objects.create(user_name=self.user.username,
-                                       instance=self.slave,
+                                       instance=self.subordinate,
                                        db_name=self.db_name,
                                        valid_date=date.today() + timedelta(days=1),
                                        limit_num=10,
                                        priv_type=1)
-        r = sql.query_privileges._db_priv(user=self.user, instance=self.slave, db_name=self.db_name)
+        r = sql.query_privileges._db_priv(user=self.user, instance=self.subordinate, db_name=self.db_name)
         self.assertTrue(r)
 
     def test_tb_priv_super(self):
@@ -207,7 +207,7 @@ class TestQueryPrivilegesCheck(TestCase):
         """
         self.sys_config.set('admin_query_limit', '50')
         self.sys_config.get_all_config()
-        r = sql.query_privileges._tb_priv(user=self.superuser, instance=self.slave, db_name=self.db_name,
+        r = sql.query_privileges._tb_priv(user=self.superuser, instance=self.subordinate, db_name=self.db_name,
                                           tb_name='table_name')
         self.assertEqual(r, 50)
 
@@ -216,7 +216,7 @@ class TestQueryPrivilegesCheck(TestCase):
         测试普通用户验证表权限，用户无权限
         :return:
         """
-        r = sql.query_privileges._tb_priv(user=self.user, instance=self.slave, db_name=self.db_name,
+        r = sql.query_privileges._tb_priv(user=self.user, instance=self.subordinate, db_name=self.db_name,
                                           tb_name='table_name')
         self.assertFalse(r)
 
@@ -226,13 +226,13 @@ class TestQueryPrivilegesCheck(TestCase):
         :return:
         """
         QueryPrivileges.objects.create(user_name=self.user.username,
-                                       instance=self.slave,
+                                       instance=self.subordinate,
                                        db_name=self.db_name,
                                        table_name='table_name',
                                        valid_date=date.today() + timedelta(days=1),
                                        limit_num=10,
                                        priv_type=2)
-        r = sql.query_privileges._tb_priv(user=self.user, instance=self.slave, db_name=self.db_name,
+        r = sql.query_privileges._tb_priv(user=self.user, instance=self.subordinate, db_name=self.db_name,
                                           tb_name='table_name')
         self.assertTrue(r)
 
@@ -243,7 +243,7 @@ class TestQueryPrivilegesCheck(TestCase):
         :return:
         """
         __db_priv.return_value = 10
-        r = sql.query_privileges._priv_limit(user=self.user, instance=self.slave, db_name=self.db_name)
+        r = sql.query_privileges._priv_limit(user=self.user, instance=self.subordinate, db_name=self.db_name)
         self.assertEqual(r, 10)
 
     @patch('sql.query_privileges._tb_priv')
@@ -255,7 +255,7 @@ class TestQueryPrivilegesCheck(TestCase):
         """
         __db_priv.return_value = 10
         __tb_priv.return_value = 1
-        r = sql.query_privileges._priv_limit(user=self.user, instance=self.slave, db_name=self.db_name, tb_name='test')
+        r = sql.query_privileges._priv_limit(user=self.user, instance=self.subordinate, db_name=self.db_name, tb_name='test')
         self.assertEqual(r, 1)
 
     @patch('sql.engines.inception.InceptionEngine.query_print')
@@ -268,7 +268,7 @@ class TestQueryPrivilegesCheck(TestCase):
                                      'table_ref': [{'db': 'archery', 'table': 'sql_users'}],
                                      'limit': {'limit': [{'type': 'INT_ITEM', 'value': '10'}]}}
 
-        r = sql.query_privileges._table_ref('select * from archery.sql_users;', self.slave, self.db_name)
+        r = sql.query_privileges._table_ref('select * from archery.sql_users;', self.subordinate, self.db_name)
         self.assertListEqual(r, [{'db': 'archery', 'table': 'sql_users'}])
 
     @patch('sql.engines.inception.InceptionEngine.query_print')
@@ -281,7 +281,7 @@ class TestQueryPrivilegesCheck(TestCase):
                                      'table_ref': [{'db': '', 'table': '*'}],
                                      'limit': {'limit': [{'type': 'INT_ITEM', 'value': '10'}]}}
         with self.assertRaises(RuntimeError):
-            sql.query_privileges._table_ref('select * from archery.sql_users;', self.slave, self.db_name)
+            sql.query_privileges._table_ref('select * from archery.sql_users;', self.subordinate, self.db_name)
 
     def test_query_priv_check_super(self):
         """
@@ -289,12 +289,12 @@ class TestQueryPrivilegesCheck(TestCase):
         :return:
         """
         r = sql.query_privileges.query_priv_check(user=self.superuser,
-                                                  instance=self.slave, db_name=self.db_name,
+                                                  instance=self.subordinate, db_name=self.db_name,
                                                   sql_content="select * from archery.sql_users;",
                                                   limit_num=100)
         self.assertDictEqual(r, {'status': 0, 'msg': 'ok', 'data': {'priv_check': True, 'limit_num': 100}})
         r = sql.query_privileges.query_priv_check(user=self.user_can_query_all,
-                                                  instance=self.slave, db_name=self.db_name,
+                                                  instance=self.subordinate, db_name=self.db_name,
                                                   sql_content="select * from archery.sql_users;",
                                                   limit_num=100)
         self.assertDictEqual(r, {'status': 0, 'msg': 'ok', 'data': {'priv_check': True, 'limit_num': 100}})
@@ -302,7 +302,7 @@ class TestQueryPrivilegesCheck(TestCase):
     def test_query_priv_check_explain_or_show_create(self):
         """测试用户权限校验，explain和show create不做校验"""
         r = sql.query_privileges.query_priv_check(user=self.user,
-                                                  instance=self.slave, db_name=self.db_name,
+                                                  instance=self.subordinate, db_name=self.db_name,
                                                   sql_content="show create table archery.sql_users;",
                                                   limit_num=100)
         self.assertTrue(r)
@@ -316,7 +316,7 @@ class TestQueryPrivilegesCheck(TestCase):
         :return:
         """
         r = sql.query_privileges.query_priv_check(user=self.user,
-                                                  instance=self.slave, db_name=self.db_name,
+                                                  instance=self.subordinate, db_name=self.db_name,
                                                   sql_content="select * from archery.sql_users;",
                                                   limit_num=100)
         self.assertDictEqual(r, {'status': 1, 'msg': '你无test_archery.sql_users表的查询权限！请先到查询权限管理进行申请',
@@ -331,7 +331,7 @@ class TestQueryPrivilegesCheck(TestCase):
         :return:
         """
         r = sql.query_privileges.query_priv_check(user=self.user,
-                                                  instance=self.slave, db_name=self.db_name,
+                                                  instance=self.subordinate, db_name=self.db_name,
                                                   sql_content="select * from archery.sql_users;",
                                                   limit_num=100)
         self.assertDictEqual(r, {'data': {'limit_num': 100, 'priv_check': True}, 'msg': 'ok', 'status': 0})
@@ -345,7 +345,7 @@ class TestQueryPrivilegesCheck(TestCase):
         :return:
         """
         r = sql.query_privileges.query_priv_check(user=self.user,
-                                                  instance=self.slave, db_name=self.db_name,
+                                                  instance=self.subordinate, db_name=self.db_name,
                                                   sql_content="select * from archery.sql_users;",
                                                   limit_num=100)
         self.assertDictEqual(r, {'data': {'limit_num': 10, 'priv_check': True}, 'msg': 'ok', 'status': 0})
@@ -358,7 +358,7 @@ class TestQueryPrivilegesCheck(TestCase):
         """
         self.sys_config.get_all_config()
         r = sql.query_privileges.query_priv_check(user=self.user,
-                                                  instance=self.slave, db_name=self.db_name,
+                                                  instance=self.subordinate, db_name=self.db_name,
                                                   sql_content="select * from archery.sql_users;",
                                                   limit_num=100)
         self.assertDictEqual(r, {'status': 1,
@@ -377,7 +377,7 @@ class TestQueryPrivilegesCheck(TestCase):
         self.sys_config.set('query_check', 'true')
         self.sys_config.get_all_config()
         r = sql.query_privileges.query_priv_check(user=self.user,
-                                                  instance=self.slave, db_name=self.db_name,
+                                                  instance=self.subordinate, db_name=self.db_name,
                                                   sql_content="select * from archery.sql_users;",
                                                   limit_num=100)
         self.assertDictEqual(r, {'status': 1,
@@ -396,7 +396,7 @@ class TestQueryPrivilegesCheck(TestCase):
         self.sys_config.set('query_check', 'true')
         self.sys_config.get_all_config()
         r = sql.query_privileges.query_priv_check(user=self.user,
-                                                  instance=self.slave, db_name=self.db_name,
+                                                  instance=self.subordinate, db_name=self.db_name,
                                                   sql_content="select * from archery.sql_users;",
                                                   limit_num=100)
         self.assertDictEqual(r, {'status': 1,
@@ -415,7 +415,7 @@ class TestQueryPrivilegesCheck(TestCase):
         self.sys_config.set('query_check', 'false')
         self.sys_config.get_all_config()
         r = sql.query_privileges.query_priv_check(user=self.user,
-                                                  instance=self.slave, db_name=self.db_name,
+                                                  instance=self.subordinate, db_name=self.db_name,
                                                   sql_content="select * from archery.sql_users;",
                                                   limit_num=100)
         self.assertDictEqual(r, {'data': {'limit_num': 100, 'priv_check': False}, 'msg': 'ok', 'status': 0})
@@ -426,7 +426,7 @@ class TestQueryPrivilegesCheck(TestCase):
         测试用户权限校验，非mysql实例、普通用户 有库权限
         :return:
         """
-        mssql_instance = Instance(instance_name='mssql', type='slave', db_type='mssql',
+        mssql_instance = Instance(instance_name='mssql', type='subordinate', db_type='mssql',
                                   host='some_host', port=3306, user='some_user', password='some_password')
         r = sql.query_privileges.query_priv_check(user=self.user,
                                                   instance=mssql_instance, db_name=self.db_name,
@@ -440,7 +440,7 @@ class TestQueryPrivilegesCheck(TestCase):
         测试用户权限校验，非mysql实例、普通用户 无库权限
         :return:
         """
-        mssql_instance = Instance(instance_name='mssql', type='slave', db_type='oracle',
+        mssql_instance = Instance(instance_name='mssql', type='subordinate', db_type='oracle',
                                   host='some_host', port=3306, user='some_user', password='some_password')
         r = sql.query_privileges.query_priv_check(user=self.user,
                                                   instance=mssql_instance, db_name=self.db_name,
@@ -458,7 +458,7 @@ class TestQueryPrivilegesApply(TestCase):
         self.superuser = User.objects.create(username='super', is_superuser=True)
         self.user = User.objects.create(username='user')
         # 使用 travis.ci 时实例和测试service保持一致
-        self.slave = Instance.objects.create(instance_name='test_instance', type='slave', db_type='mysql',
+        self.subordinate = Instance.objects.create(instance_name='test_instance', type='subordinate', db_type='mysql',
                                              host=settings.DATABASES['default']['HOST'],
                                              port=settings.DATABASES['default']['PORT'],
                                              user=settings.DATABASES['default']['USER'],
@@ -473,7 +473,7 @@ class TestQueryPrivilegesApply(TestCase):
             group_name=self.group.group_name,
             title='some_title1',
             user_name='some_user',
-            instance=self.slave,
+            instance=self.subordinate,
             db_list='some_db,some_db2',
             limit_num=100,
             valid_date=tomorrow,
@@ -486,7 +486,7 @@ class TestQueryPrivilegesApply(TestCase):
             group_name='some_group2',
             title='some_title2',
             user_name='some_user',
-            instance=self.slave,
+            instance=self.subordinate,
             db_list='some_db',
             table_list='some_table,some_tb2',
             limit_num=100,
@@ -605,7 +605,7 @@ class TestQueryPrivilegesApply(TestCase):
         }
         QueryPrivileges.objects.create(user_name=self.user.username,
                                        user_display='user2',
-                                       instance=self.slave,
+                                       instance=self.subordinate,
                                        db_name=self.db_name,
                                        table_name='table_name',
                                        valid_date=date.today() + timedelta(days=1),
@@ -630,7 +630,7 @@ class TestQueryPrivilegesApply(TestCase):
         }
         QueryPrivileges.objects.create(user_name='some_name',
                                        user_display='user2',
-                                       instance=self.slave,
+                                       instance=self.subordinate,
                                        db_name=self.db_name,
                                        table_name='table_name',
                                        valid_date=date.today() + timedelta(days=1),
@@ -660,7 +660,7 @@ class TestQueryPrivilegesApply(TestCase):
         }
         QueryPrivileges.objects.create(user_name='some_name',
                                        user_display='user2',
-                                       instance=self.slave,
+                                       instance=self.subordinate,
                                        db_name=self.db_name,
                                        table_name='table_name',
                                        valid_date=date.today() + timedelta(days=1),
@@ -676,12 +676,12 @@ class TestQueryPrivilegesApply(TestCase):
 
 class TestQuery(TestCase):
     def setUp(self):
-        self.slave1 = Instance(instance_name='test_slave_instance', type='slave', db_type='mysql',
+        self.subordinate1 = Instance(instance_name='test_subordinate_instance', type='subordinate', db_type='mysql',
                                host='testhost', port=3306, user='mysql_user', password='mysql_password')
-        self.slave2 = Instance(instance_name='test_instance_non_mysql', type='slave', db_type='mssql',
+        self.subordinate2 = Instance(instance_name='test_instance_non_mysql', type='subordinate', db_type='mssql',
                                host='some_host2', port=3306, user='some_user', password='some_password')
-        self.slave1.save()
-        self.slave2.save()
+        self.subordinate1.save()
+        self.subordinate2.save()
         self.superuser1 = User.objects.create(username='super1', is_superuser=True)
         self.u1 = User.objects.create(username='test_user', display='中文显示', is_active=True)
         self.u2 = User.objects.create(username='test_user2', display='中文显示', is_active=True)
@@ -693,8 +693,8 @@ class TestQuery(TestCase):
         self.u1.delete()
         self.u2.delete()
         self.superuser1.delete()
-        self.slave1.delete()
-        self.slave2.delete()
+        self.subordinate1.delete()
+        self.subordinate2.delete()
         archer_config = SysConfig()
         archer_config.set('disable_star', False)
 
@@ -706,7 +706,7 @@ class TestQuery(TestCase):
         some_db = 'some_db'
         some_limit = 100
         c.force_login(self.u1)
-        r = c.post('/query/', data={'instance_name': self.slave1.instance_name,
+        r = c.post('/query/', data={'instance_name': self.subordinate1.instance_name,
                                     'sql_content': some_sql,
                                     'db_name': some_db,
                                     'limit_num': some_limit})
@@ -718,9 +718,9 @@ class TestQuery(TestCase):
             'msg': '', 'bad_query': False, 'filtered_sql': some_sql, 'has_star': False}
         _get_engine.return_value.filter_sql.return_value = some_sql
         _get_engine.return_value.query.return_value = q_result
-        _get_engine.return_value.seconds_behind_master = 100
+        _get_engine.return_value.seconds_behind_main = 100
         _priv_check.return_value = {'status': 0, 'data': {'limit_num': 100, 'priv_check': True}}
-        r = c.post('/query/', data={'instance_name': self.slave1.instance_name,
+        r = c.post('/query/', data={'instance_name': self.subordinate1.instance_name,
                                     'sql_content': some_sql,
                                     'db_name': some_db,
                                     'limit_num': some_limit})
@@ -729,7 +729,7 @@ class TestQuery(TestCase):
         print(r_json)
         self.assertEqual(r_json['data']['rows'], ['value'])
         self.assertEqual(r_json['data']['column_list'], ['some'])
-        self.assertEqual(r_json['data']['seconds_behind_master'], 100)
+        self.assertEqual(r_json['data']['seconds_behind_main'], 100)
 
     @patch('sql.query.get_engine')
     @patch('sql.query.query_priv_check')
@@ -747,7 +747,7 @@ class TestQuery(TestCase):
         _get_engine.return_value.filter_sql.return_value = sql_with_limit
         _get_engine.return_value.query.return_value = q_result
         _priv_check.return_value = {'status': 0, 'data': {'limit_num': 100, 'priv_check': True}}
-        r = c.post('/query/', data={'instance_name': self.slave1.instance_name,
+        r = c.post('/query/', data={'instance_name': self.subordinate1.instance_name,
                                     'sql_content': sql_without_limit,
                                     'db_name': some_db,
                                     'limit_num': some_limit})
@@ -761,7 +761,7 @@ class TestQuery(TestCase):
         filtered_sql_with_star = 'select * from some_table limit {0};'.format(some_limit)
         _get_engine.return_value.filter_sql.return_value = filtered_sql_with_star
         _get_engine.return_value.query.reset_mock()
-        c.post('/query/', data={'instance_name': self.slave1.instance_name,
+        c.post('/query/', data={'instance_name': self.subordinate1.instance_name,
                                 'sql_content': sql_with_star,
                                 'db_name': some_db,
                                 'limit_num': some_limit})
@@ -777,7 +777,7 @@ class TestQuery(TestCase):
         _priv_check.return_value = {'status': 0, 'data': {'limit_num': 100, 'priv_check': True}}
         archer_config = SysConfig()
         archer_config.set('disable_star', True)
-        r = c.post('/query/', data={'instance_name': self.slave1.instance_name,
+        r = c.post('/query/', data={'instance_name': self.subordinate1.instance_name,
                                     'sql_content': sql_with_star,
                                     'db_name': some_db,
                                     'limit_num': some_limit})
@@ -787,7 +787,7 @@ class TestQuery(TestCase):
 
     @patch('sql.query.get_engine')
     def test_kill_query_conn(self, _get_engine):
-        kill_query_conn(self.slave1.id, 10)
+        kill_query_conn(self.subordinate1.id, 10)
         _get_engine.return_value.kill_connection.return_value = ResultSet()
 
 
@@ -813,9 +813,9 @@ class TestWorkflowView(TestCase):
                                             can_execute_resource_permission)
         self.superuser1 = User(username='super1', is_superuser=True)
         self.superuser1.save()
-        self.master1 = Instance(instance_name='test_master_instance', type='master', db_type='mysql',
+        self.main1 = Instance(instance_name='test_main_instance', type='main', db_type='mysql',
                                 host='testhost', port=3306, user='mysql_user', password='mysql_password')
-        self.master1.save()
+        self.main1.save()
         self.wf1 = SqlWorkflow.objects.create(
             workflow_name='some_name',
             group_id=1,
@@ -826,7 +826,7 @@ class TestWorkflowView(TestCase):
             create_time=self.now - timedelta(days=1),
             status='workflow_finish',
             is_backup=True,
-            instance=self.master1,
+            instance=self.main1,
             db_name='some_db',
             syntax_type=1,
         )
@@ -848,7 +848,7 @@ class TestWorkflowView(TestCase):
             create_time=self.now - timedelta(days=1),
             status='workflow_manreviewing',
             is_backup=True,
-            instance=self.master1,
+            instance=self.main1,
             db_name='some_db',
             syntax_type=1
         )
@@ -868,7 +868,7 @@ class TestWorkflowView(TestCase):
     def tearDown(self):
         SqlWorkflowContent.objects.all().delete()
         SqlWorkflow.objects.all().delete()
-        self.master1.delete()
+        self.main1.delete()
         self.u1.delete()
         self.superuser1.delete()
         self.resource_group1.delete()
@@ -886,7 +886,7 @@ class TestWorkflowView(TestCase):
         """测试工单检测，参数内容为空"""
         c = Client()
         c.force_login(self.superuser1)
-        data = {"instance_name": self.master1.instance_name}
+        data = {"instance_name": self.main1.instance_name}
         r = c.post('/simplecheck/', data=data)
         self.assertDictEqual(json.loads(r.content),
                              {'status': 1, 'msg': '页面提交参数可能为空', 'data': {}})
@@ -898,7 +898,7 @@ class TestWorkflowView(TestCase):
         c.force_login(self.superuser1)
         data = {
             "sql_content": "update sql_users set email = ''where id > 0;",
-            "instance_name": self.master1.instance_name,
+            "instance_name": self.main1.instance_name,
             "db_name": "archery",
         }
         _get_engine.side_effect = RuntimeError('RuntimeError')
@@ -915,7 +915,7 @@ class TestWorkflowView(TestCase):
         c.force_login(self.superuser1)
         data = {
             "sql_content": "update sql_users set email = ''where id > 0;",  #
-            "instance_name": self.master1.instance_name,
+            "instance_name": self.main1.instance_name,
             "db_name": "archery",
         }
         column_list = [
@@ -951,7 +951,7 @@ class TestWorkflowView(TestCase):
         data = {"sql_content": "update sql_users set email='' where id>0;",
                 "workflow_name": "【回滚工单】原工单Id:163+,3434434343",
                 "group_name": self.resource_group1.group_name,
-                "instance_name": self.master1.instance_name,
+                "instance_name": self.main1.instance_name,
                 "run_date_start": "",
                 "run_date_end": "",
                 "workflow_auditors": "11"}
@@ -969,12 +969,12 @@ class TestWorkflowView(TestCase):
         data = {"sql_content": "update sql_users set email='' where id>0;",
                 "workflow_name": "【回滚工单】原工单Id:163+,3434434343",
                 "group_name": self.resource_group1.group_name,
-                "instance_name": self.master1.instance_name,
+                "instance_name": self.main1.instance_name,
                 "db_name": "archery",
                 "run_date_start": "",
                 "run_date_end": "",
                 "workflow_auditors": "11"}
-        _user_instances.return_value.get.return_value = self.master1
+        _user_instances.return_value.get.return_value = self.main1
         _get_engine.return_value.execute_check.return_value = ReviewSet(
             syntax_type=1,
             warning_count=1,
@@ -996,12 +996,12 @@ class TestWorkflowView(TestCase):
         data = {"sql_content": "update sql_users set email='' where id>0;",
                 "workflow_name": "【回滚工单】原工单Id:163+,3434434343",
                 "group_name": self.resource_group1.group_name,
-                "instance_name": self.master1.instance_name,
+                "instance_name": self.main1.instance_name,
                 "db_name": "archery",
                 "run_date_start": "",
                 "run_date_end": "",
                 "workflow_auditors": "11"}
-        _user_instances.return_value.get.return_value = self.master1
+        _user_instances.return_value.get.return_value = self.main1
         _get_engine.return_value.execute_check.return_value = ReviewSet(
             syntax_type=1,
             warning_count=1,
@@ -1207,7 +1207,7 @@ class TestWorkflowView(TestCase):
             'workflow_name': 'some_title',
             'group_name': self.resource_group1.group_name,
             'group_id': self.resource_group1.group_id,
-            'instance_name': self.master1.instance_name,
+            'instance_name': self.main1.instance_name,
             'db_name': 'some_db',
             'is_backup': True,
             'notify_users': ''
@@ -1240,7 +1240,7 @@ class TestWorkflowView(TestCase):
             'workflow_name': 'some_title_2',
             'group_name': self.resource_group1.group_name,
             'group_id': self.resource_group1.group_id,
-            'instance_name': self.master1.instance_name,
+            'instance_name': self.main1.instance_name,
             'db_name': 'some_db',
             'is_backup': False,
             'notify_users': ''
@@ -1300,19 +1300,19 @@ class TestOptimize(TestCase):
         self.superuser = User(username='super', is_superuser=True)
         self.superuser.save()
         # 使用 travis.ci 时实例和测试service保持一致
-        self.master = Instance(instance_name='test_instance', type='master', db_type='mysql',
+        self.main = Instance(instance_name='test_instance', type='main', db_type='mysql',
                                host=settings.DATABASES['default']['HOST'],
                                port=settings.DATABASES['default']['PORT'],
                                user=settings.DATABASES['default']['USER'],
                                password=settings.DATABASES['default']['PASSWORD'])
-        self.master.save()
+        self.main.save()
         self.sys_config = SysConfig()
         self.client = Client()
         self.client.force_login(self.superuser)
 
     def tearDown(self):
         self.superuser.delete()
-        self.master.delete()
+        self.main.delete()
         self.sys_config.replace(json.dumps({}))
 
     def test_sqladvisor(self):
@@ -1393,19 +1393,19 @@ class TestSchemaSync(TestCase):
         self.superuser = User(username='super', is_superuser=True)
         self.superuser.save()
         # 使用 travis.ci 时实例和测试service保持一致
-        self.master = Instance(instance_name='test_instance', type='master', db_type='mysql',
+        self.main = Instance(instance_name='test_instance', type='main', db_type='mysql',
                                host=settings.DATABASES['default']['HOST'],
                                port=settings.DATABASES['default']['PORT'],
                                user=settings.DATABASES['default']['USER'],
                                password=settings.DATABASES['default']['PASSWORD'])
-        self.master.save()
+        self.main.save()
         self.sys_config = SysConfig()
         self.client = Client()
         self.client.force_login(self.superuser)
 
     def tearDown(self):
         self.superuser.delete()
-        self.master.delete()
+        self.main.delete()
         self.sys_config.replace(json.dumps({}))
 
     def test_schema_sync(self):
@@ -1434,9 +1434,9 @@ class TestAsync(TestCase):
         self.now = datetime.now()
         self.u1 = User(username='some_user', display='用户1')
         self.u1.save()
-        self.master1 = Instance(instance_name='test_master_instance', type='master', db_type='mysql',
+        self.main1 = Instance(instance_name='test_main_instance', type='main', db_type='mysql',
                                 host='testhost', port=3306, user='mysql_user', password='mysql_password')
-        self.master1.save()
+        self.main1.save()
         self.wf1 = SqlWorkflow.objects.create(
             workflow_name='some_name2',
             group_id=1,
@@ -1447,7 +1447,7 @@ class TestAsync(TestCase):
             create_time=self.now - timedelta(days=1),
             status='workflow_executing',
             is_backup=True,
-            instance=self.master1,
+            instance=self.main1,
             db_name='some_db',
             syntax_type=1,
         )
@@ -1471,7 +1471,7 @@ class TestAsync(TestCase):
         self.wf1.delete()
         self.u1.delete()
         self.task_result = None
-        self.master1.delete()
+        self.main1.delete()
 
     @patch('sql.utils.execute_sql.notify_for_execute')
     @patch('sql.utils.execute_sql.Audit')
@@ -1500,19 +1500,19 @@ class TestSQLAnalyze(TestCase):
         self.superuser = User(username='super', is_superuser=True)
         self.superuser.save()
         # 使用 travis.ci 时实例和测试service保持一致
-        self.master = Instance(instance_name='test_instance', type='master', db_type='mysql',
+        self.main = Instance(instance_name='test_instance', type='main', db_type='mysql',
                                host=settings.DATABASES['default']['HOST'],
                                port=settings.DATABASES['default']['PORT'],
                                user=settings.DATABASES['default']['USER'],
                                password=settings.DATABASES['default']['PASSWORD'])
-        self.master.save()
+        self.main.save()
         self.sys_config = SysConfig()
         self.client = Client()
         self.client.force_login(self.superuser)
 
     def tearDown(self):
         self.superuser.delete()
-        self.master.delete()
+        self.main.delete()
         self.sys_config.replace(json.dumps({}))
 
     def test_generate_text_None(self):
@@ -1549,7 +1549,7 @@ class TestSQLAnalyze(TestCase):
         :return:
         """
         text = "select * from sql_user;select * from sql_workflow;"
-        instance_name = self.master.instance_name
+        instance_name = self.main.instance_name
         db_name = settings.DATABASES['default']['TEST']['NAME']
         r = self.client.post(path='/sql_analyze/analyze/',
                              data={"text": text, "instance_name": instance_name, "db_name": db_name})
@@ -1565,19 +1565,19 @@ class TestBinLog(TestCase):
         self.superuser = User(username='super', is_superuser=True)
         self.superuser.save()
         # 使用 travis.ci 时实例和测试service保持一致
-        self.master = Instance(instance_name='test_instance', type='master', db_type='mysql',
+        self.main = Instance(instance_name='test_instance', type='main', db_type='mysql',
                                host=settings.DATABASES['default']['HOST'],
                                port=settings.DATABASES['default']['PORT'],
                                user=settings.DATABASES['default']['USER'],
                                password=settings.DATABASES['default']['PASSWORD'])
-        self.master.save()
+        self.main.save()
         self.sys_config = SysConfig()
         self.client = Client()
         self.client.force_login(self.superuser)
 
     def tearDown(self):
         self.superuser.delete()
-        self.master.delete()
+        self.main.delete()
         self.sys_config.replace(json.dumps({}))
 
     def test_binlog_list_instance_not_exist(self):
@@ -1675,7 +1675,7 @@ class TestBinLog(TestCase):
                 "only_schemas": "",
                 "only_dml": "true",
                 "sql_type": "",
-                "instance": self.master}
+                "instance": self.main}
         _subprocess.Popen.return_value.stdout.return_value.readline.return_value = 'sql'
         _iter.return_value = ''
         r = binlog2sql_file(args=args, user=self.superuser)
@@ -1699,7 +1699,7 @@ class TestBinLog(TestCase):
         :return:
         """
         data = {
-            "instance_id": self.master.id,
+            "instance_id": self.main.id,
             "binlog": ''
         }
         r = self.client.post(path='/binlog/del_log/', data=data)
@@ -1713,7 +1713,7 @@ class TestBinLog(TestCase):
         :return:
         """
         data = {
-            "instance_id": self.master.id,
+            "instance_id": self.main.id,
             "binlog": "mysql-bin.000001"
         }
         _query.return_value = ResultSet(full_sql='select 1')
@@ -1728,7 +1728,7 @@ class TestBinLog(TestCase):
         :return:
         """
         data = {
-            "instance_id": self.master.id,
+            "instance_id": self.main.id,
             "binlog": "mysql-bin.000001"
         }
         _query.return_value = ResultSet(full_sql='select 1')
@@ -1746,18 +1746,18 @@ class TestParam(TestCase):
         self.superuser = User(username='super', is_superuser=True)
         self.superuser.save()
         # 使用 travis.ci 时实例和测试service保持一致
-        self.master = Instance(instance_name='test_instance', type='master', db_type='mysql',
+        self.main = Instance(instance_name='test_instance', type='main', db_type='mysql',
                                host=settings.DATABASES['default']['HOST'],
                                port=settings.DATABASES['default']['PORT'],
                                user=settings.DATABASES['default']['USER'],
                                password=settings.DATABASES['default']['PASSWORD'])
-        self.master.save()
+        self.main.save()
         self.client = Client()
         self.client.force_login(self.superuser)
 
     def tearDown(self):
         self.superuser.delete()
-        self.master.delete()
+        self.main.delete()
         ParamTemplate.objects.all().delete()
 
     def test_param_list_instance_not_exist(self):
@@ -1779,7 +1779,7 @@ class TestParam(TestCase):
         :return:
         """
         data = {
-            "instance_id": self.master.id,
+            "instance_id": self.main.id,
             "editable": True
         }
         r = self.client.post(path='/param/list/', data=data)
@@ -1790,7 +1790,7 @@ class TestParam(TestCase):
         测试获取参数修改历史
         :return:
         """
-        data = {"instance_id": self.master.id,
+        data = {"instance_id": self.main.id,
                 "search": "binlog",
                 "limit": 14,
                 "offset": 0}
@@ -1805,7 +1805,7 @@ class TestParam(TestCase):
         测试参数修改，参数未在模板配置
         :return:
         """
-        data = {"instance_id": self.master.id,
+        data = {"instance_id": self.main.id,
                 "variable_name": "1",
                 "variable_value": "false"}
         r = self.client.post(path='/param/edit/', data=data)
@@ -1827,7 +1827,7 @@ class TestParam(TestCase):
                                      variable_name='binlog_format',
                                      default_value='ROW',
                                      editable=True)
-        data = {"instance_id": self.master.id,
+        data = {"instance_id": self.main.id,
                 "variable_name": "binlog_format",
                 "runtime_value": "ROW"}
         r = self.client.post(path='/param/edit/', data=data)
@@ -1849,7 +1849,7 @@ class TestParam(TestCase):
                                      variable_name='binlog_format',
                                      default_value='ROW',
                                      editable=True)
-        data = {"instance_id": self.master.id,
+        data = {"instance_id": self.main.id,
                 "variable_name": "binlog_format",
                 "runtime_value": "STATEMENT"}
         r = self.client.post(path='/param/edit/', data=data)
@@ -1871,7 +1871,7 @@ class TestParam(TestCase):
                                      variable_name='binlog_format',
                                      default_value='ROW',
                                      editable=True)
-        data = {"instance_id": self.master.id,
+        data = {"instance_id": self.main.id,
                 "variable_name": "binlog_format",
                 "runtime_value": "STATEMENT"}
         r = self.client.post(path='/param/edit/', data=data)
@@ -1888,7 +1888,7 @@ class TestNotify(TestCase):
         self.user = User.objects.create(username='test_user', display='中文显示', is_active=True)
         self.su = User.objects.create(username='s_user', display='中文显示', is_active=True, is_superuser=True)
         tomorrow = datetime.today() + timedelta(days=1)
-        self.ins = Instance.objects.create(instance_name='some_ins', type='slave', db_type='mysql',
+        self.ins = Instance.objects.create(instance_name='some_ins', type='subordinate', db_type='mysql',
                                            host='some_host',
                                            port=3306, user='ins_user', password='some_pass')
         self.wf = SqlWorkflow.objects.create(
@@ -2182,7 +2182,7 @@ class TestDataDictionary(TestCase):
         self.client = Client()
         self.client.force_login(self.su)
         # 使用 travis.ci 时实例和测试service保持一致
-        self.ins = Instance.objects.create(instance_name='test_instance', type='slave', db_type='mysql',
+        self.ins = Instance.objects.create(instance_name='test_instance', type='subordinate', db_type='mysql',
                                            host=settings.DATABASES['default']['HOST'],
                                            port=settings.DATABASES['default']['PORT'],
                                            user=settings.DATABASES['default']['USER'],

@@ -139,8 +139,8 @@ def query(request):
 
         # 仅将成功的查询语句记录存入数据库
         if not query_result.error:
-            if hasattr(query_engine, 'seconds_behind_master'):
-                result['data']['seconds_behind_master'] = query_engine.seconds_behind_master
+            if hasattr(query_engine, 'seconds_behind_main'):
+                result['data']['seconds_behind_main'] = query_engine.seconds_behind_main
             if int(limit_num) == 0:
                 limit_num = int(query_result.affected_rows)
             else:

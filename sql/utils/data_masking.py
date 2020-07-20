@@ -91,7 +91,7 @@ def analyze_query_tree(query_tree, instance):
             for
             select_item in select_list if select_item['type'] in ('FIELD_ITEM', 'aggregate')]
 
-        # 处理select_list，为统一的{'type': 'FIELD_ITEM', 'db': 'archery_master', 'table': 'sql_users', 'field': 'email'}格式
+        # 处理select_list，为统一的{'type': 'FIELD_ITEM', 'db': 'archery_main', 'table': 'sql_users', 'field': 'email'}格式
         select_list = [select_item if select_item['type'] == 'FIELD_ITEM' else select_item['aggregate'] for
                        select_item in select_list if select_item['type'] in ('FIELD_ITEM', 'aggregate')]
 
